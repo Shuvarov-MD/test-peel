@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peel 3D | Главная</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/local/templates/peel3d/scss/style.css">
 </head>
 <body>
     <header class="site-header"></header>
     <!-- /.site-header -->
     <main>
-        <div class="hero">
+        <div class="hero" style="background-image: url('/local/templates/peel3d/img/hero-bg-1.png');">
             <div class="container-fluid">
-                <div class="row">
+                <div class="hero__row row align-items-center">
                     <div class="col-md-6">
-                        <h2 class="title title--large">Peel 3 Pro.CAD</h2>
+                        <h2 class="hero__title title title--large" data-label="new">Peel 3 Pro.CAD</h2>
                         <div class="description description--large">
                             <p>Готовое решение для обратного проектирования: от оцифровки до CAD-модели за несколько минут!</p>
                         </div>
-                        <a class="button-button--primary" href="/catalog/peel-3-pro-cad/">Узнать больше</a>
+                        <a class="hero__button button button--primary" href="/catalog/peel-3-pro-cad/">Узнать больше</a>
                     </div>
                     <div class="col-md-6">
                         <img class="img-fluid" src="/upload/hero-slide-1.png" alt="" width="687" height="401" loading="lazy">
@@ -31,60 +32,55 @@
         <nav class="page-navigation container-fluid">
             <ul class="page-navigation__list">
                 <li class="page-navigation__item">
-                    <a class="page-navigation__link" href="#">3D-сканеры</a>
+                    <a class="link link--primary" href="#products">3D-сканеры</a>
                 </li>
                 <li class="page-navigation__item">
-                    <a class="page-navigation__link" href="#">Сферы применения</a>
+                    <a class="link link--primary" href="#industries">Сферы применения</a>
                 </li>
                 <li class="page-navigation__item">
-                    <a class="page-navigation__link" href="#">Клиенты</a>
+                    <a class="link link--primary" href="#clients">Клиенты</a>
                 </li>
                 <li class="page-navigation__item">
-                    <a class="page-navigation__link" href="#">Скачать брошюру</a>
+                    <a class="link link--primary" href="#popup-form-34">Скачать брошюру</a>
                 </li>
                 <li class="page-navigation__item">
-                    <a class="page-navigation__link" href="#">О нас</a>
+                    <a class="link link--primary" href="#about">О нас</a>
                 </li>
             </ul>
         </nav>
         <!-- /.page-navigation -->
 
-        <section class="info container-fluid">
-            <h2 class="title">Неограниченные возможности по доступной цене</h2>
-            <div class="row">
+        <section class="info section container-fluid">
+            <h2 class="info__title title">Неограниченные возможности по доступной цене</h2>
+            <div class="section__row row">
                 <div class="col-md-6">
                     <div class="description">
                         <p>Peel 3 — новая линейка портативных 3D‑сканеров от ведущего канадского производителя Creaform. Их главное преимущество — сочетание доступности и высокого качества 3D‑сканирования и обработки данных.</p>
                         <p>Оборудование позволяет измерить геометрически сложные объекты от 10 см до 3 м с точностью до 0,1 мм всего за несколько минут. Подходит для решения задач реверс-инжиниринга и цифровизации деталей и любых объектов в продуктовом дизайне, науке и образовании, архитектуре и искусстве.</p>
                         <p>У нас вы можете приобрести 3D‑сканер Peel 3 с минимальными сроками поставки в Казахстан, Узбекистан, Киргизию, а также заказать услуги по обучению, обслуживанию и ремонту оборудования.</p>
                     </div>
-                    <div class="button__wrapper">
+                    <div class="info__buttons-wrapper buttons-wrapper">
                         <a class="button button--primary" href="#">Задать вопрос эксперту</a>
-                        <a class="link link--download" href="#">Скачать брошюру</a>
+                        <a class="info__download link link--primary" href="#">Скачать брошюру</a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="info__video">
-                        <video class="img-fluid" width="496" height="302" controls poster="/local/templates/peel3d/video/video-poster.jpg">
-                            <source src="#" type="video/mp4">
-                            <source src="#" type="video/ogg">
-                            <source src="#" type="video/webm">
-                            Ваш браузер не поддерживает встроенные видео. Попробуйте скачать его по <a href="#">этой ссылке</a>
-                        </video>
-                    </div>
+                <div class="col-md-6 col-lg-5 offset-lg-1">
+                    <a class="info__video-link" href="#">
+                        <img src="/upload/video-poster.jpg" alt="" width="496" height="302" loading="lazy">
+                    </a>
                 </div>
             </div>
         </section>
         <!-- /.info -->
 
-        <section class="products container-fluid">
-            <h2 class="title">Наши продукты</h2>
-            <div class="description">
+        <section class="products section container-fluid">
+            <h2 class="products__title title">Наши продукты</h2>
+            <div class="products__description description">
                 <p>Решения для 3D‑сканирования в разных отраслях</p>
             </div>
             <ul class="products__list">
-                <li class="products__item row">
-                    <div class="col-md-6 col-lg-7">
+                <li class="products__item section__row row">
+                    <div class="products__item-img col-md-6 col-lg-7">
                         <img class="img-fluid" src="/upload/peel-3.png" alt="Сканер Peel 3D" width="659" height="385" loading="lazy">
                     </div>
                     <div class="col-md-6 col-lg-5">
@@ -96,11 +92,11 @@
                             <li>Идеально для производства товаров широкого потребления</li>
                             <li>Возможность бесплатно протестировать 3D‑сканер</li>
                         </ul>
-                        <a class="button button--primary" href="/catalog/peel-3/">Подробнее<span class="visually-hidden"> о Peel 3</span></a>
+                        <a class="products__item-button button button--primary" href="/catalog/peel-3/">Подробнее<span class="visually-hidden"> о Peel 3</span></a>
                     </div>
                 </li>
-                <li class="products__item row">
-                    <div class="col-md-6 col-lg-7">
+                <li class="products__item section__row row">
+                    <div class="products__item-img col-md-6 col-lg-7">
                         <img class="img-fluid" src="/upload/peel-3-cad.png" alt="Сканер Peel 3.CAD вместе с результатом сканирования на экране ноутбука" width="659" height="385" loading="lazy">
                     </div>
                     <div class="col-md-6 col-lg-5">
@@ -112,11 +108,11 @@
                             <li>Поддержка разных форматов экспорта данных</li>
                             <li>Возможность бесплатно протестировать 3D‑сканер</li>
                         </ul>
-                        <a class="button button--primary" href="/catalog/peel-3-cad/">Подробнее<span class="visually-hidden"> о Peel 3.CAD</span></a>
+                        <a class="products__item-button button button--primary" href="/catalog/peel-3-cad/">Подробнее<span class="visually-hidden"> о Peel 3.CAD</span></a>
                     </div>
                 </li>
-                <li class="products__item row">
-                    <div class="col-md-6 col-lg-7">
+                <li class="products__item section__row row">
+                    <div class="products__item-img col-md-6 col-lg-7">
                         <img class="img-fluid" src="/upload/peel-3-pro-cad.png" alt="Сканер Peel3 Pro.CAD вместе с результатом сканирования на экране ноутбука" width="659" height="385" loading="lazy">
                     </div>
                     <div class="col-md-6 col-lg-5">
@@ -128,178 +124,162 @@
                             <li>Перенос данных напрямую в САПР‑программу</li>
                             <li>Возможность бесплатно протестировать 3D‑сканер</li>
                         </ul>
-                        <a class="button button--primary" href="/catalog/peel-3-pro-cad/">Подробнее<span class="visually-hidden"> о Peel 3 Pro.CAD</span></a>
+                        <a class="products__item-button button button--primary" href="/catalog/peel-3-pro-cad/">Подробнее<span class="visually-hidden"> о Peel 3 Pro.CAD</span></a>
                     </div>
                 </li>
             </ul>
         </section>
         <!-- /.products -->
 
-        <section class="advantages container-fluid">
-            <header class="advantages__header row">
+        <section class="advantages section container-fluid">
+            <header class="advantages__header section__row row">
                 <div class="col-md-6">
-                    <h2 class="title">Почему стоит купить 3D‑сканер в KERWAN 3D</h2>
+                    <h2 class="advantages__title title">Почему стоит купить 3D‑сканер в KERWAN 3D</h2>
                 </div>
-                <div class="col-md-6">
-                    <a class="button button--border" href="#about">О компании</a>
+                <div class="col-md-6 d-flex">
+                    <a class="advantages__button button button--border" href="#about">О компании</a>
                 </div>
             </header>
-            <ul class="advantages__list row">
+            <ul class="advantages__list section__row row">
                 <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2">Официальный дистрибутор решений Peel 3D в странах СНГ</li>
                 <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2">Участие в государственных закупках и тендерах</li>
                 <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2">Самые выгодные цены на решения Peel 3D</li>
                 <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2">Оказание услуг по внедрению, обслуживанию и ремонту 3D‑оборудования</li>
                 <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2">Обучение применению 3D‑сканеров в профессиональной деятельности</li>
-                <li class="advantages__item col-sm-6    col-md-4 col-lg-3 col-xl-2">Предоставление услуг 3D‑сканирования на базе собственного парка оборудования компании</li>
+                <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2">Предоставление услуг 3D‑сканирования на базе собственного парка оборудования компании</li>
             </ul>
         </section>
         <!-- /.advantages -->
 
-        <article class="banner container-fluid">
+        <article class="banner section container-fluid">
             <div class="banner__wrapper">
-                <div class="row">
+                <div class="section__row row align-items-center">
                     <div class="col-md-6">
-                        <h2 class="title title--small">Хотите протестировать 3D‑сканер?</h2>
+                        <h2 class="banner__title title title--small">Хотите протестировать 3D‑сканер?</h2>
                         <div class="description">
                             <p>Закажите сканирование в нашем офисе или запишитесь на онлайн-демонстрацию</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <a class="button button--secondary" href="#">Записаться на онлайн-демонстрацию</a>
+                    <div class="col-md-6 d-flex">
+                        <a class="banner__button button button--secondary ms-md-auto" href="#">Записаться на онлайн-демонстрацию</a>
                     </div>
                 </div>
             </div>
         </article>
         <!-- /.banner -->
 
-        <section class="applications container-fluid">
-            <h2 class="title">Сферы применения</h2>
+        <section class="applications section container-fluid">
+            <h2 class="applications__title title">Сферы применения</h2>
             <ul class="applications__list row">
                 <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="img-fluid" src="/upload/applications-1.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="subtitle">Разработка нового продукта</h3>
-                    <p>Экономьте время и деньги на проектирование и производство новых моделей</p>
+                    <img class="applications__item-img" src="/upload/applications-1.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="applications__item-title subtitle">Разработка нового продукта</h3>
+                    <p class="mb-0">Экономьте время и деньги на проектирование и производство новых моделей</p>
                 </li>
                 <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="img-fluid" src="/upload/applications-2.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="subtitle">Восстановление и оцифровка существующих изделий</h3>
-                    <p>Экономьте время и деньги на проектирование и производство новых моделей</p>
+                    <img class="applications__item-img" src="/upload/applications-2.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="applications__item-title subtitle">Восстановление и оцифровка существующих изделий</h3>
+                    <p class="mb-0">Экономьте время и деньги на проектирование и производство новых моделей</p>
                 </li>
                 <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="img-fluid" src="/upload/applications-3.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="subtitle">Наука и образование</h3>
-                    <p>Используйте Peel 3D для тестирования новых способов производства и обучения инновационным технологиям в вузах и школах</p>
+                    <img class="applications__item-img" src="/upload/applications-3.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="applications__item-title subtitle">Наука и образование</h3>
+                    <p class="mb-0">Используйте Peel 3D для тестирования новых способов производства и обучения инновационным технологиям в вузах и школах</p>
                 </li>
                 <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="img-fluid" src="/upload/applications-4.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="subtitle">Сохранение культурных ценностей</h3>
-                    <p>Создавайте 3D-модели объектов искусства и архитектуры с сохранением цвета и текстуры</p>
+                    <img class="applications__item-img" src="/upload/applications-4.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="applications__item-title subtitle">Сохранение культурных ценностей</h3>
+                    <p class="mb-0">Создавайте 3D-модели объектов искусства и архитектуры с сохранением цвета и текстуры</p>
                 </li>
                 <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="img-fluid" src="/upload/applications-5.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="subtitle">Быстрая помощь в решении медицинских задач</h3>
-                    <p>Сканируйте человеческое тело и индивидуальные медицинские изделия для решения клинических случаев</p>
+                    <img class="applications__item-img" src="/upload/applications-5.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="applications__item-title subtitle">Быстрая помощь в решении медицинских задач</h3>
+                    <p class="mb-0">Сканируйте человеческое тело и индивидуальные медицинские изделия для решения клинических случаев</p>
                 </li>
                 <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="img-fluid" src="/upload/applications-6.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="subtitle">Творчество</h3>
-                    <p>Подарите вечную жизнь вашим творениям, поместив их в виртуальную библиотеку</p>
+                    <img class="applications__item-img" src="/upload/applications-6.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="applications__item-title subtitle">Творчество</h3>
+                    <p class="mb-0">Подарите вечную жизнь вашим творениям, поместив их в виртуальную библиотеку</p>
                 </li>
             </ul>
         </section>
         <!-- /.applications -->
 
-        <article class="banner container-fluid">
+        <article class="banner section container-fluid">
             <div class="banner__wrapper">
-                <div class="row">
+                <div class="section__row row align-items-center">
                     <div class="col-md-6 col-lg-8">
-                        <h2 class="title title--small">Подарите вечную жизнь вашим творениям, поместив их в виртуальную библиотеку</h2>
+                        <h2 class="banner__title title title--small">Подарите вечную жизнь вашим творениям, поместив их в виртуальную библиотеку</h2>
                         <div class="description">
                             <p>Узнайте, сможет ли наше оборудование решить вашу задачу.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="button button--secondary" href="#">Оставить заявку</a>
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <a class="banner__button button button--secondary ms-md-auto" href="#">Оставить заявку</a>
                     </div>
                 </div>
             </div>
         </article>
         <!-- /.banner -->
 
-        <section class="software container-fluid">
-            <div class="row">
-                <div class="col-md-6">
+        <section class="software section container-fluid">
+            <div class="section__row row align-items-center">
+                <div class="software__img col-md-6">
                     <img class="img-fluid" src="/upload/peel-os.png" alt="Ноутбук с программой Peel.OS" width="538" height="403" loading="lazy">
                 </div>
                 <div class="col-md-6">
-                    <h2 class="subtitle">Софт для Peel 3D</h2>
+                    <h2 class="software__title subtitle">Софт для Peel 3D</h2>
                     <div class="description">
                         <p>Мощная платформа для обработки данных 3D‑сканирования и реверс‑инжиниринга полученной 3D‑модели</p>
                     </div>
-                    <a class="button button--primary" href="/catalog/software/">Узнать больше</a>
+                    <a class="software__button button button--primary" href="/catalog/software/">Узнать больше</a>
                 </div>
             </div>
         </section>
         <!-- /.software -->
 
-        <section class="clients container-fluid">
-            <h2 class="title">Клиенты Peel 3D</h2>
-            <ul class="clients__list row">
-                <li class="clients__item col-lg-3">
-                    <figure>
-                        <img class="img-fluid" src="/local/templates/peel3d/img/dwfu.png" alt="Логотип ДВФУ" width="186" height="68" loading="lazy">
+        <section class="clients section container-fluid">
+            <h2 class="clients__title title">Клиенты Peel 3D</h2>
+            <ul class="clients__list section__row row">
+                <li class="clients__item col-sm-6 col-md-4 col-lg-3">
+                    <figure class="mb-0">
+                        <div class="clients__item-logo">
+                            <img class="img-fluid" src="/local/templates/peel3d/img/dwfu.png" alt="Логотип ДВФУ" width="186" height="68" loading="lazy">
+                        </div>
                         <figcaption>ДВФУ (Владивосток, Россия), вуз</figcaption>
                     </figure>
                 </li>
-                <li class="clients__item col-lg-3">
-                    <figure>
-                        <img class="img-fluid" src="/local/templates/peel3d/img/usimm.png" alt="Логотип USIMM" width="193" height="34" loading="lazy">
+                <li class="clients__item col-sm-6 col-md-4 col-lg-3">
+                    <figure class="mb-0"> 
+                        <div class="clients__item-logo">
+                            <img class="img-fluid" src="/local/templates/peel3d/img/usimm.png" alt="Логотип USIMM" width="193" height="34" loading="lazy">
+                        </div>
                         <figcaption>USIMM (Канада), центр 3D-услуг и ЧПУ-обработки</figcaption>
                     </figure>
                 </li>
-                <li class="clients__item col-lg-3">
-                    <figure>
-                        <img src="/local/templates/peel3d/img/medecins.png" alt="Логотип Médecins Sans Frontières" width="114" height="82" loading="lazy">
+                <li class="clients__item col-sm-6 col-md-4 col-lg-3">
+                    <figure class="mb-0">
+                        <div class="clients__item-logo">
+                            <img src="/local/templates/peel3d/img/medecins.png" alt="Логотип Médecins Sans Frontières" width="114" height="82" loading="lazy">
+                        </div>
                         <figcaption>Médecins Sans Frontières (Швейцария), международная медицинская гуманитарная организация</figcaption>
                     </figure>
                 </li>
-                <li class="clients__item col-lg-3">
-                    <figure>
-                        <img class="img-fluid" src="/local/templates/peel3d/img/chabloz.png" alt="Логотип Chabloz" width="165" height="39" loading="lazy">
+                <li class="clients__item col-sm-6 col-md-4 col-lg-3">
+                    <figure class="mb-0">
+                        <div class="clients__item-logo">
+                            <img class="img-fluid" src="/local/templates/peel3d/img/chabloz.png" alt="Логотип Chabloz" width="165" height="39" loading="lazy">
+                        </div>
                         <figcaption>Chabloz Orthopédie (Франция), производитель ортопедического оборудования</figcaption>
-                    </figure>
-                </li>
-                <li class="clients__item col-lg-3">
-                    <figure>
-                        <img src="#" alt="" width="" height="" loading="lazy">
-                        <figcaption>Провайдер 3D-услуг Aeroworks Performance (США)</figcaption>
-                    </figure>
-                </li>
-                <li class="clients__item col-lg-3">
-                    <figure>
-                        <img src="#" alt="" width="" height="" loading="lazy">
-                        <figcaption>Центр быстрого прототипирования Undoprototipos (Испания)</figcaption>
-                    </figure>
-                </li>
-                <li class="clients__item col-lg-3">
-                    <figure>
-                        <img src="#" alt="" width="" height="" loading="lazy">
-                        <figcaption>Производитель автозапчастей NCC (США)</figcaption>
-                    </figure>
-                </li>
-                <li class="clients__item col-lg-3">
-                    <figure>
-                        <img src="#" alt="" width="" height="" loading="lazy">
-                        <figcaption>Производитель автозапчастей SPL Parts (США)</figcaption>
                     </figure>
                 </li>
             </ul>
         </section>
         <!-- /.clients -->
 
-        <section class="about container-fluid">
-            <h2 class="title">О нас</h2>
-            <div class="row">
+        <section class="about section container-fluid">
+            <h2 class="about__title title">О нас</h2>
+            <div class="section__row row">
                 <div class="col-md-6">
                     <div class="description">
                         <p>KERWAN 3D — дистрибьютор 3D‑сканеров, программного обеспечения, 3D‑принтеров и расходных материалов ведущих мировых производителей на территории стран СНГ.</p>
@@ -312,24 +292,26 @@
                         </ul>
                         <p>Если вам нужно выполнить сканирование человека, вы можете заказать его у наших специалистов.</p>
                     </div>
-                    <a class="about__link" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">Перейти на сайт компании</a>
+                    <a class="about__link link link--secondary" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">Перейти на сайт компании</a>
                 </div>
                 <div class="col-md-6">
-                    <article class="request">
-                        <h3 class="subtitle">Узнайте, решит ли Peel 3D вашу задачу!</h3>
-                        <p>Закажите онлайн-демонстрацию 3D‑сканера</p>
-                        <a class="button button--primary" href="#">Оставить заявку</a>
-                        <img class="img-fluid" src="/local/templates/peel3d/img/peel-3d-logo.svg" alt="Логотип Peel 3D" width="101" height="41" loading="lazy">
+                    <article class="banner banner--request">
+                        <img class="banner__logo img-fluid" src="/local/templates/peel3d/img/peel-3d-logo.svg" alt="Логотип Peel 3D" width="101" height="41" loading="lazy">
+                        <h3 class="banner__title subtitle">Узнайте, решит ли Peel 3D вашу задачу!</h3>
+                        <div class="banner__description">
+                            <p>Закажите онлайн-демонстрацию 3D‑сканера</p>
+                        </div>
+                        <a class="banner__button button button--primary" href="#">Оставить заявку</a>
                     </article>
                 </div>
             </div>
         </section>
         <!-- /.about -->
 
-        <section class="about-company container-fluid">
-            <div class="row">
+        <section class="about-company section container-fluid">
+            <div class="section__row row">
                 <div class="col-md-6">
-                    <h2 class="title">О компании</h2>
+                    <h2 class="title mb-0">О компании</h2>
                 </div>
                 <div class="col-md-6">
                     <div class="description">
@@ -349,10 +331,10 @@
         </section>
         <!-- /.about-company -->
          
-        <section class="order container-fluid">
-            <div class="row">
+        <section class="order section container-fluid">
+            <div class="section__row row">
                 <div class="col-md-6">
-                    <h2 class="title">Как оформить заказ</h2>
+                    <h2 class="title mb-0">Как оформить заказ</h2>
                 </div>
                 <div class="col-md-6">
                     <div class="description">

@@ -1,0 +1,63 @@
+.advantages__header {
+    align-items: center;
+    margin-bottom: 40px;
+
+    @media (min-width: 992px) {
+        margin-bottom: 80px;
+    }
+}
+
+.advantages__title {
+    margin-bottom: 0;
+}
+
+.advantages__button {
+    @media (min-width: 768px) {
+        margin-left: auto;
+    }
+}
+
+.advantages__list {
+    text-align: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.advantages__item {
+    &::before {
+        content: "";
+        display: block;
+        width: 66px;
+        height: 66px;
+        margin: 0 auto 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &:nth-child(1)::before { 
+        background-image: url("/local/templates/peel3d/img/icons/advantages-1.svg");
+    }
+
+    &:nth-child(2)::before { 
+        background-image: url("/local/templates/peel3d/img/icons/advantages-2.svg");
+    }
+
+    &:nth-child(3)::before { 
+        background-image: url("/local/templates/peel3d/img/icons/advantages-3.svg");
+    }
+
+    &:nth-child(4)::before { 
+        background-image: url("/local/templates/peel3d/img/icons/advantages-4.svg");
+    }
+
+    &:nth-child(5)::before { 
+        background-image: url("/local/templates/peel3d/img/icons/advantages-5.svg");
+    }
+
+    &:nth-child(6)::before { 
+        background-image: url("/local/templates/peel3d/img/icons/advantages-5.svg");
+    }
+}

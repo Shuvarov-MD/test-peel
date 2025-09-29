@@ -1,0 +1,25 @@
+.applications__title {
+    margin-bottom: 1.39em;
+}
+
+.applications__list {
+    row-gap: 30px;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+
+    @media (min-width: 992px) {
+        row-gap: 80px;
+    }
+}
+
+.applications__item-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.applications__item-title {
+    margin-bottom: 0.59em;
+}
