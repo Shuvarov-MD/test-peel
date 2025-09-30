@@ -1,13 +1,8 @@
-.advantages__header {
-    align-items: center;
-    margin-bottom: 40px;
-
-    @media (min-width: 992px) {
-        margin-bottom: 80px;
-    }
+.tasks__title {
+    margin-bottom: 1.67em;
 }
 
-.advantages__list {
+.tasks__list {
     text-align: center;
     justify-content: space-evenly;
     padding-left: 0;
@@ -15,7 +10,7 @@
     list-style-type: none;
 }
 
-.advantages__item {
+.tasks__item {
     padding-top: 80px;
     background-repeat: no-repeat;
     background-position: top 0 left 50%;

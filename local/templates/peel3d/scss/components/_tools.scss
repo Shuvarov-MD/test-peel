@@ -1,0 +1,28 @@
+.tools {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #F4B400;
+}
+
+.tools__title {
+    margin-bottom: 0.67em;
+}
+
+.tools__list {
+    row-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+
+    @media (min-width: 992px) {
+        row-gap: 70px;
+    }
+}
+
+.tools__item {
+    padding-left: 115px;
+    background-repeat: no-repeat;
+    background-position: 24px 0;
+    background-size: 66px 66px;
+}

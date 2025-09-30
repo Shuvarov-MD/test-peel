@@ -36,3 +36,12 @@
 .banner__title {
     margin-bottom: 0.61em;
 }
+
+.banner__link {
+    margin-top: 10px;
+
+    &:hover,
+    &:focus {
+        color: #ffffff;
+    }
+}

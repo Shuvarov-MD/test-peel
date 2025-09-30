@@ -2,17 +2,14 @@
     margin-bottom: 0.69em;
 }
 
-.products__description {
-    margin-bottom: 45px;
-
-    @media (min-width: 768px) {
-        margin-bottom: 75px;
-    }
-}
-
 .products__list {
     padding-left: 0;
     margin-bottom: 0;
+    margin-top: 45px;
+
+    @media (min-width: 768px) {
+        margin-top: 75px;
+    }
 }
 
 .products__item {
@@ -39,7 +36,7 @@
 
 .products__item-lead {
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     color: #F4B400;
 }
 

@@ -64,6 +64,7 @@ body {
             color: #F4B400;
             background-color: transparent;
             outline: 2px solid #F4B400;
+            outline-offset: -2px;
         }
     }
 
@@ -79,6 +80,7 @@ body {
 
     &--border {
         outline: 2px solid #090908;
+        outline-offset: -2px;
 
         &:hover,
         &:focus {
@@ -90,11 +92,42 @@ body {
     &--border-inversion {
         color: #ffffff;
         outline: 2px solid #ffffff;
+        outline-offset: -2px;
 
         &:hover,
         &:focus {
             color: #F4B400;
             outline-color: #F4B400;
+        }
+    }
+
+    &--arrow {
+        position: relative;
+        padding-right: 45px;
+        background-color: #F4B400;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            width: 20px;
+            height: 20px;
+            mask: url("../img/icons/button-arrow.svg") no-repeat center / contain;
+            background-color: #090908;
+            transform: translateY(-50%);
+        }
+
+        &:hover,
+        &:focus {
+            color: #F4B400;
+            background-color: transparent;
+            outline: 2px solid #F4B400;
+            outline-offset: -2px;
+
+            &::after {
+                background-color: #F4B400;
+            }
         }
     }
 }

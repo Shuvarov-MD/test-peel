@@ -1,0 +1,28 @@
+.requirements__title {
+    margin-bottom: 0.67em;
+}
+
+.requirements__table-wrapper {
+    margin-top: 40px;
+}
+
+.requirements__table {
+    width: 100%;
+
+    th,
+    td {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #F4B400;
+    }
+
+    td {
+        padding-left: 18px;
+        padding-right: 18px;
+        text-align: center;
+    }
+}
+
+.requirements__col {
+    background-color: #FFFAEC;
+}
