@@ -446,7 +446,7 @@ a {
 .banner--request {
   padding: 30px;
   border-radius: 15px;
-  background: #DFE3EC url("/local/templates/peel3d/img/banner-bg.jpg") no-repeat top left/cover;
+  background: #DFE3EC url("../img/banner-bg.jpg") no-repeat top left/cover;
 }
 .banner--request .banner__title,
 .banner--request .banner__description {
@@ -1089,8 +1089,8 @@ a {
   border: none;
   margin-left: 10px;
   background-color: #ffffff;
-  -webkit-mask: url("/local/templates/peel3d/img/icons/shevron-down.svg") no-repeat center/contain;
-          mask: url("/local/templates/peel3d/img/icons/shevron-down.svg") no-repeat center/contain;
+  -webkit-mask: url("../img/icons/shevron-down.svg") no-repeat center/contain;
+          mask: url("../img/icons/shevron-down.svg") no-repeat center/contain;
 }
 
 .site-footer .social__list,
