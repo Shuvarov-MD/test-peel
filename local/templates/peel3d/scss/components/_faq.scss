@@ -1,0 +1,47 @@
+.faq__accordion-item {
+    padding-left: 48px;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.faq__accordion-button {
+    position: relative;
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        color: #F4B400;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -48px;
+        width: 33px;
+        height: 33px;
+        background: url("../img/icons/accordion-shevron.svg") no-repeat center / contain;
+        transform: rotate(180deg);
+    }
+
+    &.collapsed {
+        &::before {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.faq__accordion-collapse {
+    margin-top: 30px;
+
+    a {
+        color: #F4B400;
+    }
+}

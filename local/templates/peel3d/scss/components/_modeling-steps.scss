@@ -7,17 +7,48 @@
 
 .modeling-steps__list {
     padding-left: 0;
-    margin-top: 70px;
+    margin-top: 35px;
     margin-bottom: 0;
     list-style-type: none;
+
+    @media (min-width: 768px) {
+        margin-top: 70px;
+    }
 }
 
-.modeling-steps__item-row {
-    row-gap: 30px;
+.modeling-steps__number-wrapper {
+    margin-top: auto;
+    margin-bottom: 21px; 
+    font-size: 18px;
+    line-height: 1.22;
+    font-weight: 700;
+}
+
+.modeling-steps__number {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    padding: 5px;
+
+    border-radius: 50%;
+
+    &--current {
+        color: #000000;
+        background-color: #F4B400;
+        z-index: 1;
+    }
+
+    &--all {
+        border: 2px solid #ffffff;
+        margin-left: 22px;
+        margin-top: -21px;
+    }
 }
 
 .modeling-steps__item-title {
-    margin-top: auto;
     margin-bottom: 0.86em;
 }
 

@@ -11,12 +11,14 @@
 
     th,
     td {
+        min-width: 150px;
         padding-top: 18px;
         padding-bottom: 18px;
         border-bottom: 1px solid #F4B400;
     }
 
     td {
+        min-width: 300px;
         padding-left: 18px;
         padding-right: 18px;
         text-align: center;
@@ -25,4 +27,44 @@
 
 .requirements__col {
     background-color: #FFFAEC;
+}
+
+.requirements__notes {
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7C7C7C;
+    list-style-type: none;
+    counter-reset: counter;
+
+    @media (min-width: 768px) {
+        column-count: 2;
+        column-gap: 100px;
+    }
+
+    a {
+        color: inherit;
+
+        &:hover,
+        &:focus {
+            color: #F4B400;
+        }
+    }
+}
+
+.requirements__notes-item {
+    position: relative;
+    padding-left: 12px;
+
+    &:before { 
+        content: counter(counter);
+        counter-increment: counter 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 10px;
+        line-height: 1;
+    }
 }
