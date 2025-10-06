@@ -5,24 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peel 3D | Главная</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="./local/templates/peel3d/scss/style.css">
 </head>
 <body>
-    <header class="site-header"></header>
+    <header class="site-header position-sticky">
+        <div class="site-header__container container-fluid">
+            <a class="site-header__logo" href="/">
+                <img class="img-fluid" src="/local/templates/peel3d/img/peel-3d-logo.svg" alt="Логотип Peel 3D" width="134" height="55">
+            </a>
+            <div class="site-header__wrapper">
+                <nav class="site-header__navigation site-navigation">
+                    <ul class="site-navigation__list">
+                        <li class="site-navigation__item site-navigation__item--children">
+                            <div class="site-navigation__wrapper">
+                                <a class="site-navigation__link" href="#">3D-сканеры</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                    <span class="visually-hidden">Открыть подменю 3D-сканеры</span>
+                                </button>
+                            </div>
+                            <ul class="site-navigation__sublist">
+                                <li>
+                                    <a href="./catalog/peel-3/">Peel 3</a>
+                                </li>
+                                <li>
+                                    <a href="./catalog/peel-3-cad/">Peel 3.CAD</a>
+                                </li>
+                                <li>
+                                    <a href="./catalog/peel-3-pro-cad/">Peel 3 Pro.CAD</a>
+                                </li>
+                                <li>
+                                    <a href="./catalog/education/">Решения для образования</a>
+                                </li>
+                                <li>
+                                    <a href="./catalog/accessories/">Аксессуары</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="site-navigation__item site-navigation__item--children">
+                            <div class="site-navigation__wrapper">
+                                <a class="site-navigation__link" href="#">ПО</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                    <span class="visually-hidden">Открыть подменю ПО</span>
+                                </button>
+                            </div>
+                            <ul class="site-navigation__sublist">
+                                <li>
+                                    <a href="#">Peel.OS</a>
+                                </li>
+                                <li>
+                                    <a href="#">Peel 3.CAD</a>
+                                </li>
+                                <li>
+                                    <a href="#">Peel.CAD Pro</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="site-navigation__item site-navigation__item--children">
+                            <div class="site-navigation__wrapper">
+                                <a class="site-navigation__link" href="#">Решаемые задачи</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                    <span class="visually-hidden">Открыть подменю Решаемые задачи</span>
+                                </button>
+                            </div>
+                            <ul class="site-navigation__sublist">
+                                <li>
+                                    <a href="./tasks-solved/object-scan/">Сканирование объекта</a>
+                                </li>
+                                <li>
+                                    <a href="./tasks-solved/human-scan/">Сканирование человека</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="site-navigation__item site-navigation__item--children">
+                            <div class="site-navigation__wrapper">
+                                <a class="site-navigation__link" href="#">Галерея проектов</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                    <span class="visually-hidden">Открыть подменю Галерея проектов</span>
+                                </button>
+                            </div>
+                            <ul class="site-navigation__sublist">
+                                <li>
+                                    <a href="./cases/#solution_videos">Видео</a>
+                                </li>
+                                <li>
+                                    <a href="./cases/#video">Примеры 3D-моделей</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="site-navigation__item">
+                             <a class="site-navigation__link" href="/faq/">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="site-header__contacts">
+                    <a class="site-header__link" href="#about">О нас</a>
+                    <ul class="site-header__contacts-list">
+                        <li>
+                            <a href="mailto:sales3d@kerwanltd.com">sales3d@kerwanltd.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+77172695922">+7 (7172) 69 59 22</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="site-header__logo" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">
+                <img class="img-fluid" src="/local/templates/peel3d/img/kerwan-logo.svg" alt="Логотип Kerwan" width="148" height="49">
+            </a>
+            <button class="site-header__toggle d-lg-none ms-auto" type="button">
+                <span class="site-header__toggle-line"></span>
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+        </div>
+    </header>
     <!-- /.site-header -->
     <main>
-        <div class="hero" style="background-image: url('./local/templates/peel3d/img/hero-bg-1.png');">
-            <div class="container-fluid">
-                <div class="hero__row row align-items-center">
-                    <div class="col-md-6">
-                        <h2 class="hero__title title title--large new">Peel 3 Pro.CAD</h2>
-                        <div class="description description--large">
-                            <p>Готовое решение для обратного проектирования: от оцифровки до CAD-модели за несколько минут!</p>
+        <div class="hero">
+            <div class="swiper hero__swiper">
+                <div class="swiper-wrapper">
+                    <div class="hero__swiper-slide swiper-slide" style="background-image: url('./local/templates/peel3d/img/hero-bg-1.png');">
+                        <div class="container-fluid">
+                            <div class="hero__row row align-items-center">
+                                <div class="col-md-6">
+                                    <h2 class="hero__title title title--large new">Peel 3 Pro.CAD</h2>
+                                    <div class="description description--large">
+                                        <p>Готовое решение для обратного проектирования: от оцифровки до CAD-модели за несколько минут!</p>
+                                    </div>
+                                    <a class="hero__button button button--primary" href="./catalog/peel-3-pro-cad/">Узнать больше</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="img-fluid" src="./upload/hero-slide-1.png" alt="" width="687" height="401" loading="lazy">
+                                </div>
+                            </div>
                         </div>
-                        <a class="hero__button button button--primary" href="./catalog/peel-3-pro-cad/">Узнать больше</a>
                     </div>
-                    <div class="col-md-6">
-                        <img class="img-fluid" src="./upload/hero-slide-1.png" alt="" width="687" height="401" loading="lazy">
+                    <div class="hero__swiper-slide swiper-slide" style="background-image: url('./local/templates/peel3d/img/hero-bg-1.png');">
+                        <div class="container-fluid">
+                            <div class="hero__row row align-items-center">
+                                <div class="col-md-6">
+                                    <h2 class="hero__title title title--large">Peel 3 Pro</h2>
+                                    <div class="description description--large">
+                                        <p>Готовое решение для обратного проектирования: от оцифровки до CAD-модели за несколько минут!</p>
+                                    </div>
+                                    <a class="hero__button button button--primary" href="./catalog/peel-3-pro-cad/">Узнать больше</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="img-fluid" src="./upload/hero-slide-1.png" alt="" width="687" height="401" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,40 +372,80 @@
 
         <section class="clients section container-fluid">
             <h2 class="clients__title title">Клиенты Peel 3D</h2>
-            <ul class="clients__list section__row row">
-                <li class="clients__item col-sm-6 col-md-4 col-lg-3">
-                    <figure class="mb-0">
-                        <div class="clients__item-logo">
-                            <img class="img-fluid" src="./local/templates/peel3d/img/dwfu.png" alt="Логотип ДВФУ" width="186" height="68" loading="lazy">
-                        </div>
-                        <figcaption>ДВФУ (Владивосток, Россия), вуз</figcaption>
-                    </figure>
-                </li>
-                <li class="clients__item col-sm-6 col-md-4 col-lg-3">
-                    <figure class="mb-0"> 
-                        <div class="clients__item-logo">
-                            <img class="img-fluid" src="./local/templates/peel3d/img/usimm.png" alt="Логотип USIMM" width="193" height="34" loading="lazy">
-                        </div>
-                        <figcaption>USIMM (Канада), центр 3D-услуг и ЧПУ-обработки</figcaption>
-                    </figure>
-                </li>
-                <li class="clients__item col-sm-6 col-md-4 col-lg-3">
-                    <figure class="mb-0">
-                        <div class="clients__item-logo">
-                            <img src="./local/templates/peel3d/img/medecins.png" alt="Логотип Médecins Sans Frontières" width="114" height="82" loading="lazy">
-                        </div>
-                        <figcaption>Médecins Sans Frontières (Швейцария), международная медицинская гуманитарная организация</figcaption>
-                    </figure>
-                </li>
-                <li class="clients__item col-sm-6 col-md-4 col-lg-3">
-                    <figure class="mb-0">
-                        <div class="clients__item-logo">
-                            <img class="img-fluid" src="./local/templates/peel3d/img/chabloz.png" alt="Логотип Chabloz" width="165" height="39" loading="lazy">
-                        </div>
-                        <figcaption>Chabloz Orthopédie (Франция), производитель ортопедического оборудования</figcaption>
-                    </figure>
-                </li>
-            </ul>
+            <div class="clients__swiper swiper">
+                <ul class="clients__list swiper-wrapper">
+                    <li class="clients__item swiper-slide">
+                        <figure class="mb-0">
+                            <div class="clients__item-logo">
+                                <img class="img-fluid" src="./local/templates/peel3d/img/dwfu.png" alt="Логотип ДВФУ" width="186" height="68" loading="lazy">
+                            </div>
+                            <figcaption>ДВФУ (Владивосток, Россия), вуз</figcaption>
+                        </figure>
+                    </li>
+                    <li class="clients__item swiper-slide">
+                        <figure class="mb-0"> 
+                            <div class="clients__item-logo">
+                                <img class="img-fluid" src="./local/templates/peel3d/img/usimm.png" alt="Логотип USIMM" width="193" height="34" loading="lazy">
+                            </div>
+                            <figcaption>USIMM (Канада), центр 3D-услуг и ЧПУ-обработки</figcaption>
+                        </figure>
+                    </li>
+                    <li class="clients__item swiper-slide">
+                        <figure class="mb-0">
+                            <div class="clients__item-logo">
+                                <img src="./local/templates/peel3d/img/medecins.png" alt="Логотип Médecins Sans Frontières" width="114" height="82" loading="lazy">
+                            </div>
+                            <figcaption>Médecins Sans Frontières (Швейцария), международная медицинская гуманитарная организация</figcaption>
+                        </figure>
+                    </li>
+                    <li class="clients__item swiper-slide">
+                        <figure class="mb-0">
+                            <div class="clients__item-logo">
+                                <img class="img-fluid" src="./local/templates/peel3d/img/chabloz.png" alt="Логотип Chabloz" width="165" height="39" loading="lazy">
+                            </div>
+                            <figcaption>Chabloz Orthopédie (Франция), производитель ортопедического оборудования</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="clients__item swiper-slide">
+                        <figure class="mb-0">
+                            <div class="clients__item-logo">
+                                <img class="img-fluid" src="./local/templates/peel3d/img/dwfu.png" alt="Логотип ДВФУ" width="186" height="68" loading="lazy">
+                            </div>
+                            <figcaption>ДВФУ (Владивосток, Россия), вуз</figcaption>
+                        </figure>
+                    </li>
+                    <li class="clients__item swiper-slide">
+                        <figure class="mb-0"> 
+                            <div class="clients__item-logo">
+                                <img class="img-fluid" src="./local/templates/peel3d/img/usimm.png" alt="Логотип USIMM" width="193" height="34" loading="lazy">
+                            </div>
+                            <figcaption>USIMM (Канада), центр 3D-услуг и ЧПУ-обработки</figcaption>
+                        </figure>
+                    </li>
+                    <li class="clients__item swiper-slide">
+                        <figure class="mb-0">
+                            <div class="clients__item-logo">
+                                <img src="./local/templates/peel3d/img/medecins.png" alt="Логотип Médecins Sans Frontières" width="114" height="82" loading="lazy">
+                            </div>
+                            <figcaption>Médecins Sans Frontières (Швейцария), международная медицинская гуманитарная организация</figcaption>
+                        </figure>
+                    </li>
+                    <li class="clients__item swiper-slide">
+                        <figure class="mb-0">
+                            <div class="clients__item-logo">
+                                <img class="img-fluid" src="./local/templates/peel3d/img/chabloz.png" alt="Логотип Chabloz" width="165" height="39" loading="lazy">
+                            </div>
+                            <figcaption>Chabloz Orthopédie (Франция), производитель ортопедического оборудования</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <div class="clients__swiper-buttons">
+                    <button class="clients__swiper-button clients__swiper-button--next" type="button"></button>
+                    <button class="clients__swiper-button clients__swiper-button--prev" type="button"></button>
+                </div>
+                <div class="clients__swiper-pagination"></div>
+            </div>
         </section>
         <!-- /.clients -->
 
@@ -501,5 +673,7 @@
     <!-- /.site-footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./local/templates/peel3d/js/main.js"></script>
 </body>
 </html>

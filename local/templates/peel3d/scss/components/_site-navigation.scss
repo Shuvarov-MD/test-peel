@@ -1,0 +1,136 @@
+.site-navigation__list {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    gap: 30px;
+    
+    @media (min-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 992px) { 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
+
+.site-navigation__link {
+    display: block;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &[href]:hover,
+    &[href]:focus {
+        color: #F4B400;
+    }
+
+    @media (min-width: 992px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 400;
+        color: inherit;
+        text-transform: none;
+    }
+}
+
+.site-navigation__item--children {
+    position: relative;
+
+    &:focus-within {
+        .site-navigation__sublist {
+            display: block;
+        }
+    }
+
+    @media (min-width: 992px) { 
+        &:hover,
+        &:focus-within {
+            .site-navigation__sublist {
+                display: block;
+            }
+        }
+    }
+}
+
+.site-navigation__item--children .site-navigation__link {
+    position: relative;
+
+    @media (min-width: 992px) {
+        padding-right: 25px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 17px;
+            height: 17px;
+            transform: translateY(-50%);
+            background: url("../img/icons/shevron-down.svg") no-repeat center / contain;
+        }
+    }
+}
+
+.site-navigation__sublist {
+    display: none;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    list-style-type: none;
+
+    li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 576px) {
+        display: block;
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: max-content;
+        margin-top: 0;
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: #F4B400;
+        }
+    }
+}
+
+.site-navigation__wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+
+.site-navigation__toggle {
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin-left: 10px;
+    background-color: #ffffff;
+    mask: url("../img/icons/shevron-down.svg") no-repeat center / contain;
+}

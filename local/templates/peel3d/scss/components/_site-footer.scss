@@ -44,7 +44,6 @@
     @media (min-width: 576px) {
         grid-area: 1 / 2 / 3 / 3;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
     }
 
     @media (min-width: 768px) {

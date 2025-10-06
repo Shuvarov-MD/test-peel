@@ -1,10 +1,14 @@
 body {
-    font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.25;
     font-weight: 400;
     color: #090908;
     background-color: #ffffff;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .container-fluid {

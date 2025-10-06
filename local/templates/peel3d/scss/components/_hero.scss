@@ -2,12 +2,15 @@
     padding-top: 35px;
     padding-bottom: 65px;
     background-color: #F0F2F5;
-    background-repeat: no-repeat;
-    background-position: top 0 left 50vw;
 
     &--light {
         background-color: transparent;
     }
+}
+
+.hero__swiper-slide {
+    background-repeat: no-repeat;
+    background-position: top 0 left 50vw;
 }
 
 .hero__row {
