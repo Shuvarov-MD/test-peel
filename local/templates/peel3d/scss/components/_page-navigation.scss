@@ -1,17 +1,12 @@
-.page-navigation {
-    margin-bottom: 100px;
-}
-
+// Навигация по странице (ссылки-якоря)
 .page-navigation__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px 40px;
-    margin-bottom: 0;
-    padding-left: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    list-style-type: none;
-    border-bottom: 1px solid #DFDFDF;
+    gap: rem(20) rem(40);
+    @include reset-list;
+    padding-top: rem(15);
+    padding-bottom: rem(15);
+    border-bottom: rem(1) solid $color-border-navigation;
 }

@@ -1,0 +1,13 @@
+body {
+    font-family: $font-text;
+    font-size: 1rem;
+    line-height: 1.25;
+    font-weight: 400;
+    color: $color-dark;
+    background-color: $color-light;
+}
+
+a {
+    color: $color-primary;
+    transition: color 0.2s ease-in-out;
+}

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peel 3D | Peel 3 Pro.CAD</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="/local/templates/peel3d/scss/style.css">
 </head>
 <body>
-    <header class="site-header"></header>
     <header class="site-header position-sticky">
-        <div class="site-header__container container-fluid">
+        <div class="site-header__container custom-container container-fluid">
             <a class="site-header__logo" href="/">
                 <img class="img-fluid" src="/local/templates/peel3d/img/peel-3d-logo.svg" alt="Логотип Peel 3D" width="134" height="55">
             </a>
@@ -122,7 +122,7 @@
     <!-- /.site-header -->
     <main>
         <div class="hero">
-            <div class="container-fluid">
+            <div class="custom-container container-fluid">
                 <div class="hero__row row align-items-center">
                     <div class="col-md-6">
                         <h1 class="hero__title title title--large">Peel 3 Pro.CAD</h1>
@@ -148,39 +148,64 @@
         <!-- /.hero -->
 
         <section class="modeling-steps">
-            <div class="container-fluid">
+            <div class="custom-container container-fluid">
                 <h2 class="title">3D-моделирование по шагам</h2>
-                <ul class="modeling-steps__list">
-                    <li class="modeling-steps__item">
-                        <div class="section__row row">
-                            <div class="col-md-8 col-lg-9 order-md-2">
-                                <video class="modeling-steps__video" width="891" height="467" controls poster="https://3dscan.kz/local/templates/peel3d/images/software/software-adv-2.webp">
-                                    <source src="https://3dscan.kz/local/templates/peel3d/images/software/video/peel-os-scan-step2.webm" type="video/webm">
-                                    <source src="https://3dscan.kz/local/templates/peel3d/images/software/peel-os-scan-step2.mp4" type="video/mp4">
-                                    <source src="https://3dscan.kz/local/templates/peel3d/images/software/peel-os-scan-step2.ogv" type="video/ogg">
-                                    Ваш браузер не поддерживает видеотег HTML5.
-                                </video>
-                            </div>
-                            <div class="col-md-4 col-lg-3 order-md-1 d-flex flex-column">
-                                <div class="modeling-steps__number-wrapper">
-                                    <span class="modeling-steps__number modeling-steps__number--current">1</span>
-                                    <span class="modeling-steps__number modeling-steps__number--all">8</span>
+                <div class="modeling-steps__slider swiper">
+                    <ul class="modeling-steps__list swiper-wrapper">
+                        <li class="modeling-steps__item swiper-slide">
+                            <div class="section__row row">
+                                <div class="col-md-8 col-lg-9 order-md-2">
+                                    <video class="modeling-steps__video" width="891" height="467" controls poster="https://3dscan.kz/local/templates/peel3d/images/software/software-adv-2.webp">
+                                        <source src="https://3dscan.kz/local/templates/peel3d/images/software/video/peel-os-scan-step2.webm" type="video/webm">
+                                        <source src="https://3dscan.kz/local/templates/peel3d/images/software/peel-os-scan-step2.mp4" type="video/mp4">
+                                        <source src="https://3dscan.kz/local/templates/peel3d/images/software/peel-os-scan-step2.ogv" type="video/ogg">
+                                        Ваш браузер не поддерживает видеотег HTML5.
+                                    </video>
                                 </div>
-                                <h3 class="modeling-steps__item-title title title--small">Настройка параметров</h3>
-                                <div class="description mb-4">
-                                    <p>Оптимизируйте параметры сканирования на основе уникальных характеристик вашего объекта</p>
+                                <div class="col-md-4 col-lg-3 order-md-1 d-flex flex-column">
+                                    <div class="modeling-steps__number-wrapper">
+                                        <span class="modeling-steps__number modeling-steps__number--current">1</span>
+                                        <span class="modeling-steps__number modeling-steps__number--all">8</span>
+                                    </div>
+                                    <h3 class="modeling-steps__item-title title title--small">Настройка параметров</h3>
+                                    <div class="description mb-4">
+                                        <p>Оптимизируйте параметры сканирования на основе уникальных характеристик вашего объекта</p>
+                                    </div>
+                                    <a class="button button--border-inversion mt-auto me-auto" href="#tools">Пропустить шаги</a>
                                 </div>
-                                <a class="button button--border-inversion mt-auto me-auto" href="#tools">Пропустить шаги</a>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="modeling-steps__item swiper-slide">
+                            <div class="section__row row">
+                                <div class="col-md-8 col-lg-9 order-md-2">
+                                    <video class="modeling-steps__video" width="891" height="467" controls poster="https://3dscan.kz/local/templates/peel3d/images/software/software-adv-2.webp">
+                                        <source src="https://3dscan.kz/local/templates/peel3d/images/software/video/peel-os-scan-step2.webm" type="video/webm">
+                                        <source src="https://3dscan.kz/local/templates/peel3d/images/software/peel-os-scan-step2.mp4" type="video/mp4">
+                                        <source src="https://3dscan.kz/local/templates/peel3d/images/software/peel-os-scan-step2.ogv" type="video/ogg">
+                                        Ваш браузер не поддерживает видеотег HTML5.
+                                    </video>
+                                </div>
+                                <div class="col-md-4 col-lg-3 order-md-1 d-flex flex-column">
+                                    <div class="modeling-steps__number-wrapper">
+                                        <span class="modeling-steps__number modeling-steps__number--current">1</span>
+                                        <span class="modeling-steps__number modeling-steps__number--all">8</span>
+                                    </div>
+                                    <h3 class="modeling-steps__item-title title title--small">Настройка параметров</h3>
+                                    <div class="description mb-4">
+                                        <p>Оптимизируйте параметры сканирования на основе уникальных характеристик вашего объекта</p>
+                                    </div>
+                                    <a class="button button--border-inversion mt-auto me-auto" href="#tools">Пропустить шаги</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- /.modeling-steps -->
 
         <section class="tools section" id="tools">
-            <div class="container-fluid">
+            <div class="custom-container container-fluid">
                 <div class="row">
                     <div class="col-lg-6">
                         <h2 class="tools__title title">Инструменты программного продукта Peel.CAD Pro</h2>
@@ -235,7 +260,7 @@
         </section>
         <!-- /.tools -->
 
-        <section class="requirements section container-fluid">
+        <section class="requirements section custom-container container-fluid">
             <div class="row">
                 <div class="col-lg-6">
                     <h2 class="requirements__title title">Системные требования для установки ПО</h2>
@@ -309,7 +334,7 @@
             </ol>
         </section>
 
-        <section class="products section container-fluid">
+        <section class="products section custom-container container-fluid">
             <h2 class="products__title title">Совместимые сканеры Peel 3D</h2>
             <ul class="products__list">
                 <li class="products__item section__row row">
@@ -364,7 +389,7 @@
         </section>
         <!-- /.products -->
 
-        <section class="tasks section container-fluid">
+        <section class="tasks section custom-container container-fluid">
             <h2 class="tasks__title title">Какие задачи решает ПО Peel 3D</h2>
             <ul class="tasks__list section__row row">
                 <li class="tasks__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('/local/templates/peel3d/img/icons/tasks-1.svg');">Цифровизация объектов</li>
@@ -377,7 +402,7 @@
         </section>
         <!-- /.tasks -->
 
-        <article class="banner section container-fluid">
+        <article class="banner section custom-container container-fluid">
             <div class="banner__wrapper">
                 <div class="section__row row align-items-center">
                     <div class="col-md-8">
@@ -395,7 +420,7 @@
         </article>
         <!-- /.banner -->
 
-        <section class="advantages section container-fluid">
+        <section class="advantages section custom-container container-fluid">
             <header class="advantages__header section__row row">
                 <div class="col-md-6">
                     <h2 class="title mb-0">Почему выгодно заказать решения в KERWAN 3D</h2>
@@ -414,7 +439,7 @@
         </section>
         <!-- /.advantages -->
 
-        <section class="about-company section container-fluid">
+        <section class="about-company section custom-container container-fluid">
             <div class="section__row row">
                 <div class="col-md-6">
                     <h2 class="title mb-0">О компании</h2>
@@ -437,7 +462,7 @@
         </section>
         <!-- /.about-company -->
          
-        <section class="order section container-fluid">
+        <section class="order section custom-container container-fluid">
             <div class="section__row row">
                 <div class="col-md-6">
                     <h2 class="title mb-0">Как оформить заказ</h2>
@@ -451,7 +476,7 @@
         </section>
         <!-- /.order -->
 
-        <section class="questions section container-fluid">
+        <section class="questions section custom-container container-fluid">
             <h2 class="questions__title title">Остались вопросы?</h2>
             <div class="questions__description description">Заполните заявку, и наши специалисты свяжутся с вами в ближайшее время!</div>
             <a class="questions__button button button--primary" href="#">Оставить заявку</a>
@@ -460,7 +485,7 @@
     </main>
     
     <footer class="site-footer">
-        <div class="site-footer__container container-fluid">
+        <div class="site-footer__container custom-container container-fluid">
             <a class="site-footer__logo site-footer__logo--kerwan" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">
                 <img class="img-fluid" src="/local/templates/peel3d/img/kerwar-logo-light.svg" alt="Логотип Kerwan" width="123" height="41" loading="lazy">
             </a>
@@ -472,7 +497,7 @@
                             <span class="visually-hidden">Открыть подменю Каталог</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist">
                         <li>
                             <a href="/catalog/peel-3/">Peel 3</a>
                         </li>
@@ -497,7 +522,7 @@
                             <span class="visually-hidden">Открыть подменю ПО</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist">
                         <li>
                             <a href="#">Peel.OS</a>
                         </li>
@@ -516,7 +541,7 @@
                             <span class="visually-hidden">Открыть подменю Решаемые задачи</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist">
                         <li>
                             <a href="/tasks-solved/object-scan/">Сканирование объекта</a>
                         </li>
@@ -532,7 +557,7 @@
                             <span class="visually-hidden">Открыть подменю Галерея проектов</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist">
                         <li>
                             <a href="/cases/#solution_videos">Видео</a>
                         </li>
@@ -614,5 +639,7 @@
     <!-- /.site-footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/local/templates/peel3d/js/main.js"></script>
 </body>
 </html>

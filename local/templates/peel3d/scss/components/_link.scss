@@ -1,0 +1,25 @@
+.link {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &--primary {
+        color: $color-dark;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    &--secondary {
+        color: $color-primary;
+        
+        &:hover,
+        &:focus {
+            color: $color-dark;
+        }
+    }
+}

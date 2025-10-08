@@ -23,13 +23,13 @@
         margin: auto;
         width: 60px;
         height: 60px;
-        background-color: #F4B400;
+        background-color: $color-primary;
         mask: url("../img/icons/play.svg") no-repeat center / contain;
     }
 
     &:hover::before,
     &:focus::before {
-        background-color: #ffffff;
+        background-color: $color-light;
     }
 
     img {
@@ -50,12 +50,12 @@
         left: 0;
         width: 25px;
         height: 25px;
-        background-color: #090908;
+        background-color: $color-dark;
         mask: url("../img/icons/arrow-line-down.svg") no-repeat center / contain;
     }
 
     &:hover::before,
     &:focus::before {
-        background-color: #F4B400;
+        background-color: $color-primary;
     }
 }

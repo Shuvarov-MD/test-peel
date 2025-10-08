@@ -1,0 +1,22 @@
+.custom-container {
+    max-width: rem(1224);
+}
+
+.buttons-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: rem(25) rem(50);
+}
+
+.section {
+    margin-bottom: rem(60);
+
+    @media (min-width: 992px) {
+        margin-bottom: rem(100);
+    }
+
+    &__row {
+        row-gap: rem(24);
+    }
+}

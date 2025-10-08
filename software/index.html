@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peel 3D | ПО для 3D‑сканирования</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="/local/templates/peel3d/scss/style.css">
 </head>
 <body>
     <header class="site-header position-sticky">
-        <div class="site-header__container container-fluid">
+        <div class="site-header__container custom-container container-fluid">
             <a class="site-header__logo" href="/">
                 <img class="img-fluid" src="/local/templates/peel3d/img/peel-3d-logo.svg" alt="Логотип Peel 3D" width="134" height="55">
             </a>
@@ -121,7 +122,7 @@
     <!-- /.site-header -->
     <main>
         <div class="hero section">
-            <div class="container-fluid">
+            <div class="custom-container container-fluid">
                 <div class="hero__row row align-items-center">
                     <div class="col-md-6">
                         <h1 class="hero__title title title--large">ПО для 3D‑сканирования</h2>
@@ -138,7 +139,7 @@
         </div>
         <!-- /.hero -->
 
-        <section class="modeling section container-fluid">
+        <section class="modeling section custom-container container-fluid">
             <h2 class="modeling__title title">3D-моделирование в программных продуктах Peel 3D</h2>
             <p class="modeling__subtitle subtitle">Смотрите, как всё просто!</p>
             <div class="modeling__wrapper">
@@ -206,7 +207,7 @@
             </div>
         </section>
 
-        <section class="products section container-fluid">
+        <section class="products section custom-container container-fluid">
             <h2 class="products__title title">Программные продукты Peel 3D</h2>
             <ul class="products__list">
                 <li class="products__item section__row row">
@@ -261,7 +262,7 @@
         </section>
         <!-- /.products -->
 
-        <article class="banner section container-fluid">
+        <article class="banner section custom-container container-fluid">
             <div class="banner__wrapper">
                 <div class="section__row row align-items-center">
                     <div class="col-md-8">
@@ -279,7 +280,7 @@
         </article>
         <!-- /.banner -->
 
-        <section class="examples section container-fluid">
+        <section class="examples section custom-container container-fluid">
             <header class="examples__header section__row row">
                 <div class="col-md-7">
                     <h2 class="title mb-0">Примеры полученных 3D-моделей</h2>
@@ -288,25 +289,49 @@
                     <a href="#" class="button button--border ms-md-auto">Больше моделей в разных отраслях</a>
                 </div>
             </header>
-            <ul class="examples__list">
-                <li class="examples__item section__row row align-items-center">
-                    <div class="col-lg-6">
-                        <a class="examples__video-link" href="#">
-                            <img src="/upload/examples-1.jpg" alt="" width="624" height="332" loading="lazy">
-                            <span class="visually-hidden">Открыть видео во всплывающем окне</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <h3 class="examples__item-title subtitle">Отливная форма</h3>
-                        <div class="description">
-                            <p>Это металлическая литая деталь, отсканированная сканером Peel 3. Это сделано для того, чтобы показать, с како детализацией сканер распознает элементы объектов.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div class="examples__slider-wrapper">
+                <div class="examples__swiper swiper">
+                    <ul class="examples__list swiper-wrapper">
+                        <li class="examples__item swiper-slide">
+                            <div class="section__row row align-items-center w-100">
+                                <div class="col-lg-6">
+                                    <a class="examples__video-link" href="#">
+                                        <img src="/upload/examples-1.jpg" alt="" width="624" height="332" loading="lazy">
+                                        <span class="visually-hidden">Открыть видео во всплывающем окне</span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="examples__item-title subtitle">Отливная форма</h3>
+                                    <div class="description">
+                                        <p>Это металлическая литая деталь, отсканированная сканером Peel 3. Это сделано для того, чтобы показать, с како детализацией сканер распознает элементы объектов.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="examples__item swiper-slide">
+                            <div class="section__row row align-items-center w-100">
+                                <div class="col-lg-6">
+                                    <a class="examples__video-link" href="#">
+                                        <img src="/upload/examples-1.jpg" alt="" width="624" height="332" loading="lazy">
+                                        <span class="visually-hidden">Открыть видео во всплывающем окне</span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="examples__item-title subtitle">Отливная форма 1</h3>
+                                    <div class="description">
+                                        <p>Это металлическая литая деталь, отсканированная сканером Peel 3. Это сделано для того, чтобы показать, с како детализацией сканер распознает элементы объектов.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="examples__swiper-button swiper-button-prev" type="button"></button>
+                <button class="examples__swiper-button swiper-button-next" type="button"></button>
+            </div>
         </section>
 
-        <section class="advantages section container-fluid">
+        <section class="advantages section custom-container container-fluid">
             <header class="advantages__header section__row row">
                 <div class="col-md-6">
                     <h2 class="title mb-0">Почему выгодно заказать решения в KERWAN 3D</h2>
@@ -325,7 +350,7 @@
         </section>
         <!-- /.advantages -->
 
-        <section class="questions section container-fluid">
+        <section class="questions section custom-container container-fluid">
             <h2 class="questions__title title">Остались вопросы?</h2>
             <div class="questions__description description">Заполните заявку, и наши специалисты свяжутся с вами в ближайшее время!</div>
             <a class="questions__button button button--primary" href="#">Оставить заявку</a>
@@ -334,7 +359,7 @@
     </main>
     
     <footer class="site-footer">
-        <div class="site-footer__container container-fluid">
+        <div class="site-footer__container custom-container container-fluid">
             <a class="site-footer__logo site-footer__logo--kerwan" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">
                 <img class="img-fluid" src="/local/templates/peel3d/img/kerwar-logo-light.svg" alt="Логотип Kerwan" width="123" height="41" loading="lazy">
             </a>
@@ -488,5 +513,7 @@
     <!-- /.site-footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/local/templates/peel3d/js/main.js"></script>
 </body>
 </html>

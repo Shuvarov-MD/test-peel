@@ -6,7 +6,7 @@
     &.position-sticky {
         top: 0;
         left: 0;
-        background-color: #ffffff;
+        background-color: $color-light;
 
         .site-header__container {
             &::before {
@@ -30,7 +30,7 @@
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-
+    max-width: 1224px;
 
     &::before {
         content: "";
@@ -39,7 +39,7 @@
         left: 12px;
         right: 12px;
         height: 1px;
-        background-color: #090908;
+        background-color: $color-dark;
     }
     
     @media (min-width: 768px) {
@@ -67,7 +67,7 @@
     height: calc(100vh - 66px);
     padding: 40px 12px;
     color: #7C7C7C;
-    background-color: #090908;
+    background-color: $color-dark;
     overflow-y: auto;
 
     &.open {
@@ -107,7 +107,7 @@
         max-height: calc(100vh - 95px);
         padding: 40px 12px;
         color: #7C7C7C;
-        background-color: #090908;
+        background-color: $color-dark;
         overflow-y: auto;
     }
 
@@ -149,12 +149,12 @@
     margin-top: 30px;
 
     a {
-        color: #ffffff;
+        color: $color-light;
         text-decoration: none;
 
         &:hover,
         &:focus {
-            color: #F4B400;
+            color: $color-primary;
         }
 
         @media (min-width: 768px) {
@@ -181,7 +181,7 @@
     
         a {
             position: relative;
-            color: #ffffff;
+            color: $color-light;
         }
     }
 }
@@ -203,8 +203,11 @@
 }
 
 .site-header__toggle {
+    position: relative;
     display: flex;
     flex-direction: column;
+    width: 40px;
+    height: 26px;
     row-gap: 5px;
     padding: 5px;
     border: none;
@@ -216,15 +219,33 @@
         display: block;
         width: 100%;
         height: 2px;
-        background-color: #090908;
+        background-color: $color-dark;
         border-radius: 4px;
+    }
+
+    &.open {
+        .site-header__toggle-line {
+            opacity: 0;
+        }  
+
+        &::before,
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
     }
 }
 
 .site-header__toggle-line {
     width: 30px;
     height: 2px;
-    background-color: #090908;
+    background-color: $color-dark;
     border-radius: 4px;
 }
 

@@ -1,0 +1,17 @@
+.description {
+    &--large {
+        font-size: rem(18);
+
+        @media (min-width: 992px) {
+           font-size: rem(25);
+        }
+    }
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}

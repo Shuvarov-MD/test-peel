@@ -1,0 +1,26 @@
+.social__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 37px;
+    height: 37px;
+    border: 1px solid $color-light;
+    color: $color-light;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+        border-color: $color-primary;
+    }
+}

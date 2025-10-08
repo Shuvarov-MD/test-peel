@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     color: #7C7C7C;
-    background-color: #090908;
+    background-color: $color-dark;
 }
 
 .site-footer__container {
@@ -35,6 +35,18 @@
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
+}
+
+.site-footer__navigation-sublist {
+    display: none;
+
+    &.open {
+        display: block;
+    }
+
+    @media (min-width: 576px) {
+        display: block;
+    }
 }
 
 .site-footer__navigation {
@@ -78,7 +90,7 @@
 
     &:hover,
     &:focus {
-        color: #F4B400;
+        color: $color-primary;
     }
 }
 
@@ -89,13 +101,13 @@
 
 .site-footer__navigation-link {
     font-weight: 600;
-    color: #ffffff;
+    color: $color-light;
     text-transform: uppercase;
     text-decoration: none;
 
     &[href]:hover,
     &[href]:focus {
-        color: #F4B400;
+        color: $color-primary;
     }
 }
 
@@ -104,13 +116,13 @@
     height: 20px;
     border: none;
     margin-left: 10px;
-    background-color: #ffffff;
+    background-color: $color-light;
     mask: url("../img/icons/shevron-down.svg") no-repeat center / contain;
 }
 
 .site-footer .social__list,
 .site-footer .contacts {
-    color: #ffffff;
+    color: $color-light;
 }
 
 .site-footer__social {
@@ -144,14 +156,14 @@
     max-width: 140px;
     padding-left: 42px;
     font-weight: 600;
-    color: #ffffff;
+    color: $color-light;
     text-transform: uppercase;
     text-decoration: none;
     margin: 0 auto;
 
     &:hover,
     &:focus {
-        color:#F4B400
+        color:$color-primary
     }
 
     &::before {
@@ -161,7 +173,7 @@
         left: 0;
         width: 32px;
         height: 32px;
-        background-color: #F4B400;
+        background-color: $color-primary;
         mask: url("../img/icons/arrow-line-down.svg") no-repeat center / contain;
     }
 
@@ -208,9 +220,9 @@
 .site-footer__button {
     &:hover,
     &:focus {
-        color: #F4B400;
+        color: $color-primary;
         background-color: transparent;
-        outline: 2px solid #F4B400;
+        outline: 2px solid $color-primary;
         outline-offset: -2px;
     }
 

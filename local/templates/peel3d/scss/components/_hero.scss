@@ -28,7 +28,7 @@
         font-size: 1rem;
         line-height: 1.25;
         border-radius: 15px;
-        color: #ffffff;
+        color: $color-light;
         background-color: #CC2132;
         text-transform: uppercase;
         vertical-align: super;
@@ -52,13 +52,13 @@
         margin: auto;
         width: 60px;
         height: 60px;
-        background-color: #F4B400;
+        background-color: $color-primary;
         mask: url("../img/icons/play.svg") no-repeat center / contain;
     }
 
     &:hover::before,
     &:focus::before {
-        background-color: #ffffff;
+        background-color: $color-light;
     }
 
     img {

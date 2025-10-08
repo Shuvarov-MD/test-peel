@@ -1,7 +1,7 @@
 .modeling-steps {
     padding-top: 80px;
     padding-bottom: 80px;
-    color: #ffffff;
+    color: $color-light;
     background-color: #181818;
 }
 
@@ -32,17 +32,16 @@
     width: 33px;
     height: 33px;
     padding: 5px;
-
     border-radius: 50%;
 
     &--current {
         color: #000000;
-        background-color: #F4B400;
+        background-color: $color-primary;
         z-index: 1;
     }
 
     &--all {
-        border: 2px solid #ffffff;
+        border: 2px solid $color-light;
         margin-left: 22px;
         margin-top: -21px;
     }

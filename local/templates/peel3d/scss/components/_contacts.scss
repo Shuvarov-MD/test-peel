@@ -1,0 +1,21 @@
+.contacts {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.contacts__item {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.contacts__link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+    }
+}

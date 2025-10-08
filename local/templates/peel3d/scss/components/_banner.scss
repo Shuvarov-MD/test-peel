@@ -22,7 +22,7 @@
 .banner__wrapper {
     padding: 30px;
     border-radius: 15px;
-    background-color: #F4B400;
+    background-color: $color-primary;
 
     @media (min-width: 576px) {
         padding: 40px;
@@ -42,6 +42,6 @@
 
     &:hover,
     &:focus {
-        color: #ffffff;
+        color: $color-light;
     }
 }

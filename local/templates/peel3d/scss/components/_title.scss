@@ -1,0 +1,25 @@
+.title {
+    font-size: rem(28);
+    font-weight: 700;
+    line-height: 1.11;
+
+    &--large {
+        font-size: rem(36);
+    }
+
+    &--small {
+        font-size: rem(22);
+    }
+
+    @media (min-width: 992px) {
+        font-size: rem(36);
+
+        &--large {
+            font-size: rem(42);
+        }
+
+        &--small {
+            font-size: rem(28);
+        }
+    }
+}
