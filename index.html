@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peel 3D | Главная</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="/local/templates/peel3d/scss/style.css">
 </head>
+
 <body>
-    <header class="site-header position-sticky">
+    <header class="site-header">
         <div class="site-header__container custom-container container-fluid">
             <a class="site-header__logo" href="/">
                 <img class="img-fluid" src="/local/templates/peel3d/img/peel-3d-logo.svg" alt="Логотип Peel 3D" width="134" height="55">
             </a>
-            <div class="site-header__wrapper">
-                <nav class="site-header__navigation site-navigation">
+            <div class="site-header__wrapper" id="site-header__wrapper">
+                <nav class="site-header__navigation site-navigation" aria-label="Главное меню">
                     <ul class="site-navigation__list">
                         <li class="site-navigation__item site-navigation__item--children">
                             <div class="site-navigation__wrapper">
-                                <a class="site-navigation__link" href="#">3D-сканеры</a>
-                                <button class="site-navigation__toggle d-sm-none" type="button">
-                                    <span class="visually-hidden">Открыть подменю 3D-сканеры</span>
+                                <a class="site-navigation__link" href="/catalog/">3D&#8209;сканеры</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button" aria-expanded="false" aria-controls="header-submenu-3dscan">
+                                    <span class="visually-hidden">Открыть подменю 3D&#8209;сканеры</span>
                                 </button>
                             </div>
-                            <ul class="site-navigation__sublist">
+                            <ul class="site-navigation__sublist" id="header-submenu-3dscan">
                                 <li>
                                     <a href="/catalog/peel-3/">Peel 3</a>
                                 </li>
                                 <li>
-                                    <a href="/catalog/peel-3-cad/">Peel 3.CAD</a>
+                                    <a href="/catalog/peel-3-cad/">Peel&nbsp;3.CAD</a>
                                 </li>
                                 <li>
-                                    <a href="/catalog/peel-3-pro-cad/">Peel 3 Pro.CAD</a>
+                                    <a href="/catalog/peel-3-pro-cad/">Peel&nbsp;3 Pro.CAD</a>
                                 </li>
                                 <li>
                                     <a href="/catalog/education/">Решения для образования</a>
@@ -44,17 +47,17 @@
                         </li>
                         <li class="site-navigation__item site-navigation__item--children">
                             <div class="site-navigation__wrapper">
-                                <a class="site-navigation__link" href="#">ПО</a>
-                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                <a class="site-navigation__link" href="/catalog/software/">ПО</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button" aria-expanded="false" aria-controls="header-submenu-software">
                                     <span class="visually-hidden">Открыть подменю ПО</span>
                                 </button>
                             </div>
-                            <ul class="site-navigation__sublist">
+                            <ul class="site-navigation__sublist" id="header-submenu-software">
                                 <li>
                                     <a href="#">Peel.OS</a>
                                 </li>
                                 <li>
-                                    <a href="#">Peel 3.CAD</a>
+                                    <a href="#">Peel&nbsp;3.CAD</a>
                                 </li>
                                 <li>
                                     <a href="#">Peel.CAD Pro</a>
@@ -63,12 +66,12 @@
                         </li>
                         <li class="site-navigation__item site-navigation__item--children">
                             <div class="site-navigation__wrapper">
-                                <a class="site-navigation__link" href="#">Решаемые задачи</a>
-                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                <span class="site-navigation__link">Решаемые задачи</span>
+                                <button class="site-navigation__toggle d-sm-none" type="button" aria-expanded="false" aria-controls="header-submenu-tasks">
                                     <span class="visually-hidden">Открыть подменю Решаемые задачи</span>
                                 </button>
                             </div>
-                            <ul class="site-navigation__sublist">
+                            <ul class="site-navigation__sublist" id="header-submenu-tasks">
                                 <li>
                                     <a href="/tasks-solved/object-scan/">Сканирование объекта</a>
                                 </li>
@@ -79,27 +82,27 @@
                         </li>
                         <li class="site-navigation__item site-navigation__item--children">
                             <div class="site-navigation__wrapper">
-                                <a class="site-navigation__link" href="#">Галерея проектов</a>
-                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                <a class="site-navigation__link" href="/cases/">Галерея проектов</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button" aria-expanded="false" aria-controls="header-submenu-cases">
                                     <span class="visually-hidden">Открыть подменю Галерея проектов</span>
                                 </button>
                             </div>
-                            <ul class="site-navigation__sublist">
+                            <ul class="site-navigation__sublist" id="header-submenu-cases">
                                 <li>
                                     <a href="/cases/#solution_videos">Видео</a>
                                 </li>
                                 <li>
-                                    <a href="/cases/#video">Примеры 3D-моделей</a>
+                                    <a href="/cases/#video">Примеры 3D&#8209;моделей</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="site-navigation__item">
-                             <a class="site-navigation__link" href="/faq/">FAQ</a>
+                            <a class="site-navigation__link" href="/faq/">FAQ</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="site-header__contacts">
-                    <a class="site-header__link" href="#about">О нас</a>
+                    <a class="site-header__link" href="#about">О&nbsp;нас</a>
                     <ul class="site-header__contacts-list">
                         <li>
                             <a href="mailto:sales3d@kerwanltd.com">sales3d@kerwanltd.com</a>
@@ -113,45 +116,54 @@
             <a class="site-header__logo" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">
                 <img class="img-fluid" src="/local/templates/peel3d/img/kerwan-logo.svg" alt="Логотип Kerwan" width="148" height="49">
             </a>
-            <button class="site-header__toggle d-lg-none ms-auto" type="button">
-                <span class="site-header__toggle-line"></span>
+            <button class="site-header__toggle d-lg-none ms-auto" type="button" aria-expanded="false" aria-controls="site-header__wrapper">
                 <span class="visually-hidden">Открыть меню</span>
+                <span class="site-header__toggle-line"></span>
             </button>
         </div>
     </header>
     <!-- /.site-header -->
+
     <main>
         <div class="hero">
             <div class="swiper hero__swiper">
                 <div class="swiper-wrapper">
-                    <div class="hero__swiper-slide swiper-slide" style="background-image: url('./local/templates/peel3d/img/hero-bg-1.png');">
+                    <div class="hero__swiper-slide swiper-slide"
+                        style="background-image: url('/local/templates/peel3d/img/hero-bg-1.png');">
                         <div class="custom-container container-fluid">
                             <div class="hero__row row align-items-center">
                                 <div class="col-md-6">
                                     <h2 class="hero__title title title--large new">Peel 3 Pro.CAD</h2>
                                     <div class="description description--large">
-                                        <p>Готовое решение для обратного проектирования: от оцифровки до CAD-модели за несколько минут!</p>
+                                        <p>Готовое решение для обратного проектирования: от оцифровки до CAD-модели за
+                                            несколько минут!</p>
                                     </div>
-                                    <a class="hero__button button button--primary" href="/catalog/peel-3-pro-cad/">Узнать больше</a>
+                                    <a class="hero__button button button--primary"
+                                        href="/catalog/peel-3-pro-cad/">Узнать больше</a>
                                 </div>
                                 <div class="col-md-6">
-                                    <img class="img-fluid" src="/upload/hero-slide-1.png" alt="" width="687" height="401" loading="lazy">
+                                    <img class="img-fluid" src="/upload/hero-slide-1.png" alt="" width="687"
+                                        height="401" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="hero__swiper-slide swiper-slide" style="background-image: url('./local/templates/peel3d/img/hero-bg-1.png');">
+                    <div class="hero__swiper-slide swiper-slide"
+                        style="background-image: url('/local/templates/peel3d/img/hero-bg-1.png');">
                         <div class="custom-container container-fluid">
                             <div class="hero__row row align-items-center">
                                 <div class="col-md-6">
                                     <h2 class="hero__title title title--large">Peel 3 Pro</h2>
                                     <div class="description description--large">
-                                        <p>Готовое решение для обратного проектирования: от оцифровки до CAD-модели за несколько минут!</p>
+                                        <p>Готовое решение для обратного проектирования: от оцифровки до CAD-модели за
+                                            несколько минут!</p>
                                     </div>
-                                    <a class="hero__button button button--primary" href="/catalog/peel-3-pro-cad/">Узнать больше</a>
+                                    <a class="hero__button button button--primary"
+                                        href="/catalog/peel-3-pro-cad/">Узнать больше</a>
                                 </div>
                                 <div class="col-md-6">
-                                    <img class="img-fluid" src="/upload/hero-slide-1.png" alt="" width="687" height="401" loading="lazy">
+                                    <img class="img-fluid" src="/upload/hero-slide-1.png" alt="" width="687"
+                                        height="401" loading="lazy">
                                 </div>
                             </div>
                         </div>
@@ -161,10 +173,10 @@
         </div>
         <!-- /.hero -->
 
-        <nav class="page-navigation section custom-container container-fluid">
+        <nav class="page-navigation section custom-container container-fluid" aria-label="Навигация по странице">
             <ul class="page-navigation__list">
                 <li>
-                    <a class="link link--primary" href="#products">3D-сканеры</a>
+                    <a class="link link--primary" href="#products">3D&#8209;сканеры</a>
                 </li>
                 <li>
                     <a class="link link--primary" href="#industries">Сферы применения</a>
@@ -176,88 +188,88 @@
                     <a class="link link--primary" href="#popup-form-34">Скачать брошюру</a>
                 </li>
                 <li>
-                    <a class="link link--primary" href="#about">О нас</a>
+                    <a class="link link--primary" href="#about">О&nbsp;нас</a>
                 </li>
             </ul>
         </nav>
         <!-- /.page-navigation -->
 
         <section class="info section custom-container container-fluid">
-            <h2 class="info__title title">Неограниченные возможности по доступной цене</h2>
+            <h2 class="title">Неограниченные возможности по&nbsp;доступной цене</h2>
             <div class="section__row row">
                 <div class="col-md-6">
                     <div class="description">
-                        <p>Peel 3 — новая линейка портативных 3D‑сканеров от ведущего канадского производителя Creaform. Их главное преимущество — сочетание доступности и высокого качества 3D‑сканирования и обработки данных.</p>
-                        <p>Оборудование позволяет измерить геометрически сложные объекты от 10 см до 3 м с точностью до 0,1 мм всего за несколько минут. Подходит для решения задач реверс-инжиниринга и цифровизации деталей и любых объектов в продуктовом дизайне, науке и образовании, архитектуре и искусстве.</p>
-                        <p>У нас вы можете приобрести 3D‑сканер Peel 3 с минимальными сроками поставки в Казахстан, Узбекистан, Киргизию, а также заказать услуги по обучению, обслуживанию и ремонту оборудования.</p>
+                        <p>Peel 3&nbsp;&mdash; новая линейка портативных 3D&#8209;сканеров от&nbsp;ведущего канадского производителя Creaform. Их&nbsp;главное преимущество&nbsp;&mdash; сочетание доступности и&nbsp;высокого качества 3D&#8209;сканирования и&nbsp;обработки данных.</p>
+                        <p>Оборудование позволяет измерить геометрически сложные объекты от&nbsp;10&nbsp;см до&nbsp;3&nbsp;м с&nbsp;точностью до&nbsp;0,1&nbsp;мм всего за&nbsp;несколько минут. Подходит для решения задач реверс-инжиниринга и&nbsp;цифровизации деталей и&nbsp;любых объектов в&nbsp;продуктовом дизайне, науке и&nbsp;образовании, архитектуре и&nbsp;искусстве.</p>
+                        <p>У&nbsp;нас вы&nbsp;можете приобрести 3D&#8209;сканер Peel 3&nbsp;с минимальными сроками поставки в&nbsp;Казахстан, Узбекистан, Киргизию, а&nbsp;также заказать услуги по&nbsp;обучению, обслуживанию и&nbsp;ремонту оборудования.</p>
                     </div>
                     <div class="info__buttons-wrapper buttons-wrapper">
-                        <a class="button button--primary" href="#">Задать вопрос эксперту</a>
-                        <a class="info__download link link--primary" href="#">Скачать брошюру</a>
+                        <a class="button button--primary" href="#popup-form-25">Задать вопрос эксперту</a>
+                        <a class="info__download link link--primary" href="#popup-form-34">Скачать брошюру</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5 offset-lg-1">
-                    <a class="info__video-link" href="#">
-                        <img src="/upload/video-poster.jpg" alt="" width="496" height="302" loading="lazy">
-                        <span class="visually-hidden">Открыть видео во всплывающем окне</span>
+                    <a class="info__video-link" href="https://www.youtube.com/watch?v=c908RyjLObk">
+                        <img srcset="/upload/video-poster.webp 1x, /upload/video-poster@2x.webp 2x" src="/upload/video-poster.jpg" alt="" width="496" height="302" loading="lazy">
+                        <span class="visually-hidden">Открыть видео во&nbsp;всплывающем окне</span>
                     </a>
                 </div>
             </div>
         </section>
-        <!-- /.info -->
+        <!-- /.information -->
 
-        <section class="products section custom-container container-fluid">
-            <h2 class="products__title title">Наши продукты</h2>
+        <section class="products section custom-container container-fluid" id="products">
+            <h2 class="title">Наши продукты</h2>
             <div class="description">
-                <p>Решения для 3D‑сканирования в разных отраслях</p>
+                <p>Решения для 3D&#8209;сканирования в&nbsp;разных отраслях</p>
             </div>
             <ul class="products__list">
-                <li class="products__item section__row row">
+                <li class="products__item section__row row" itemscope itemtype="https://schema.org/Product">
                     <div class="products__item-img col-md-6 col-lg-7">
-                        <img class="img-fluid" src="/upload/peel-3.png" alt="Сканер Peel 3D" width="659" height="385" loading="lazy">
+                        <img class="img-fluid" srcset="/upload/peel-3.webp 1x, /upload/peel-3@2x.webp 2x" src="/upload/peel-3.png" alt="Сканер Peel 3D" width="659" height="385" loading="lazy" itemprop="image">
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3 class="products__item-title subtitle">Peel 3</h3>
-                        <b class="products__item-lead">Самое экономичное решение в линейке Peel 3D</b>
+                        <h3 class="subtitle" itemprop="name">Peel&nbsp;3</h3>
+                        <b class="products__item-lead" itemprop="description">Самое экономичное решение в&nbsp;линейке Peel&nbsp;3D</b>
                         <ul class="products__item-list">
                             <li>Сканирование любых поверхностей</li>
                             <li>Автоматическое распознавание форм</li>
                             <li>Идеально для производства товаров широкого потребления</li>
-                            <li>Возможность бесплатно протестировать 3D‑сканер</li>
+                            <li>Возможность бесплатно протестировать 3D&#8209;сканер</li>
                         </ul>
-                        <a class="products__item-button button button--primary" href="/catalog/peel-3/">Подробнее<span class="visually-hidden"> о Peel 3</span></a>
+                        <a class="products__item-button button button--primary" href="/catalog/peel-3/">Подробнее<span class="visually-hidden"> о&nbsp;Peel&nbsp;3</span></a>
                     </div>
                 </li>
-                <li class="products__item section__row row">
+                <li class="products__item section__row row" itemscope itemtype="https://schema.org/Product">
                     <div class="products__item-img col-md-6 col-lg-7">
-                        <img class="img-fluid" src="/upload/peel-3-cad.png" alt="Сканер Peel 3.CAD вместе с результатом сканирования на экране ноутбука" width="659" height="385" loading="lazy">
+                        <img class="img-fluid" srcset="/upload/peel-3-cad.webp 1x, /upload/peel-3-cad@2x.webp 2x" src="/upload/peel-3-cad.png" alt="Сканер Peel 3.CAD вместе с результатом сканирования на экране ноутбука" width="659" height="385" loading="lazy" itemprop="image">
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3 class="products__item-title subtitle">Peel 3.CAD</h3>
-                        <b class="products__item-lead">Все самое необходимое для реверс‑инжиниринга</b>
+                        <h3 class="subtitle" itemprop="name">Peel&nbsp;3.CAD</h3>
+                        <b class="products__item-lead" itemprop="description">Все самое необходимое для реверс‑инжиниринга</b>
                         <ul class="products__item-list">
                             <li>Включает программное обеспечение для обратного проектирования</li>
                             <li>Максимальная детализация</li>
                             <li>Поддержка разных форматов экспорта данных</li>
-                            <li>Возможность бесплатно протестировать 3D‑сканер</li>
+                            <li>Возможность бесплатно протестировать 3D&#8209;сканер</li>
                         </ul>
-                        <a class="products__item-button button button--primary" href="/catalog/peel-3-cad/">Подробнее<span class="visually-hidden"> о Peel 3.CAD</span></a>
+                        <a class="products__item-button button button--primary" href="/catalog/peel-3-cad/">Подробнее<span class="visually-hidden"> о&nbsp;Peel&nbsp;3.CAD</span></a>
                     </div>
                 </li>
-                <li class="products__item section__row row">
+                <li class="products__item section__row row" itemscope itemtype="https://schema.org/Product">
                     <div class="products__item-img col-md-6 col-lg-7">
-                        <img class="img-fluid" src="/upload/peel-3-pro-cad.png" alt="Сканер Peel3 Pro.CAD вместе с результатом сканирования на экране ноутбука" width="659" height="385" loading="lazy">
+                        <img class="img-fluid" srcset="/upload/peel-3-pro-cad.webp 1x, /upload/peel-3-pro-cad@2x.webp 2x" src="/upload/peel-3-pro-cad.png" alt="Сканер Peel3 Pro.CAD вместе с результатом сканирования на экране ноутбука" width="659" height="385" loading="lazy" itemprop="image">
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3 class="products__item-title subtitle">Peel 3 Pro.CAD</h3>
-                        <b class="products__item-lead">Профессиональный комплект для быстрой оцифровки и создания CAD‑моделей</b>
+                        <h3 class="subtitle" itemprop="name">Peel&nbsp;3 Pro.CAD</h3>
+                        <b class="products__item-lead" itemprop="description">Профессиональный комплект для быстрой оцифровки и&nbsp;создания CAD&#8209;моделей</b>
                         <ul class="products__item-list">
-                            <li>Готовое решение: 3D‑сканер + ПО для обработки данных</li>
+                            <li>Готовое решение: 3D&#8209;сканер + ПО&nbsp;для обработки данных</li>
                             <li>Полный набор инструментов для обратного проектирования</li>
-                            <li>Перенос данных напрямую в САПР‑программу</li>
-                            <li>Возможность бесплатно протестировать 3D‑сканер</li>
+                            <li>Перенос данных напрямую в&nbsp;САПР‑программу</li>
+                            <li>Возможность бесплатно протестировать 3D&#8209;сканер</li>
                         </ul>
-                        <a class="products__item-button button button--primary" href="/catalog/peel-3-pro-cad/">Подробнее<span class="visually-hidden"> о Peel 3 Pro.CAD</span></a>
+                        <a class="products__item-button button button--primary" href="/catalog/peel-3-pro-cad/">Подробнее<span class="visually-hidden"> о&nbsp;Peel&nbsp;3 Pro.CAD</span></a>
                     </div>
                 </li>
             </ul>
@@ -265,21 +277,23 @@
         <!-- /.products -->
 
         <section class="advantages section custom-container container-fluid">
-            <header class="advantages__header section__row row">
-                <div class="col-md-6">
-                    <h2 class="title mb-0">Почему стоит купить 3D‑сканер в KERWAN 3D</h2>
+            <div class="advantages__row row">
+                <div class="col-md-6 order-md-1">
+                    <h2 class="title mb-0">Почему стоит купить 3D&#8209;сканер в&nbsp;KERWAN&nbsp;3D</h2>
                 </div>
-                <div class="col-md-6 d-flex">
-                    <a class="button button--border ms-md-auto" href="#about">О компании</a>
+                <div class="col-12 order-md-3">
+                    <ul class="advantages__list section__row row">
+                        <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('/local/templates/peel3d/img/icons/advantages-1.svg');">Официальный дистрибутор решений Peel 3D&nbsp;в странах СНГ</li>
+                        <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('/local/templates/peel3d/img/icons/advantages-2.svg');">Участие в&nbsp;государственных закупках и&nbsp;тендерах</li>
+                        <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('/local/templates/peel3d/img/icons/advantages-3.svg');">Самые выгодные цены на&nbsp;решения Peel 3D</li>
+                        <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('/local/templates/peel3d/img/icons/advantages-4.svg');">Оказание услуг по&nbsp;внедрению, обслуживанию и&nbsp;ремонту 3D&#8209;оборудования</li>
+                        <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('/local/templates/peel3d/img/icons/advantages-5.svg');">Обучение применению 3D&#8209;сканеров в&nbsp;профессиональной деятельности</li>
+                    </ul>
                 </div>
-            </header>
-            <ul class="advantages__list section__row row">
-                <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('./local/templates/peel3d/img/icons/advantages-1.svg');">Официальный дистрибутор решений Peel 3D в странах СНГ</li>
-                <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('./local/templates/peel3d/img/icons/advantages-2.svg');">Участие в государственных закупках и тендерах</li>
-                <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('./local/templates/peel3d/img/icons/advantages-3.svg');">Самые выгодные цены на решения Peel 3D</li>
-                <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('./local/templates/peel3d/img/icons/advantages-4.svg');">Оказание услуг по внедрению, обслуживанию и ремонту 3D‑оборудования</li>
-                <li class="advantages__item col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-image: url('./local/templates/peel3d/img/icons/advantages-5.svg');">Обучение применению 3D‑сканеров в профессиональной деятельности</li>
-            </ul>
+                <div class="col-md-6 d-flex align-items-center order-md-2">
+                    <a class="button button--border mx-auto ms-md-auto me-md-0" href="#about">О&nbsp;компании</a>
+                </div>
+            </div>
         </section>
         <!-- /.advantages -->
 
@@ -287,51 +301,51 @@
             <div class="banner__wrapper">
                 <div class="section__row row align-items-center">
                     <div class="col-md-6">
-                        <h2 class="banner__title title title--small">Хотите протестировать 3D‑сканер?</h2>
+                        <h2 class="title title--small">Хотите протестировать 3D&#8209;сканер?</h2>
                         <div class="description">
-                            <p>Закажите сканирование в нашем офисе или запишитесь на онлайн-демонстрацию</p>
+                            <p>Закажите сканирование в&nbsp;нашем офисе или запишитесь на&nbsp;онлайн-демонстрацию</p>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex">
-                        <a class="banner__button button button--secondary ms-md-auto" href="#">Записаться на онлайн-демонстрацию</a>
+                        <a class="banner__button button button--secondary ms-md-auto" href="#popup-form-45">Записаться на&nbsp;онлайн-демонстрацию</a>
                     </div>
                 </div>
             </div>
         </article>
         <!-- /.banner -->
 
-        <section class="applications section custom-container container-fluid">
-            <h2 class="applications__title title">Сферы применения</h2>
+        <section class="applications section custom-container container-fluid" id="industries">
+            <h2 class="title">Сферы применения</h2>
             <ul class="applications__list row">
-                <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="applications__item-img" src="/upload/applications-1.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="applications__item-title subtitle">Разработка нового продукта</h3>
-                    <p class="mb-0">Экономьте время и деньги на проектирование и производство новых моделей</p>
+                <li class="col-sm-6 col-lg-4">
+                    <img class="applications__img img-fluid" srcset="/upload/applications-1.webp 1x, /upload/applications-1@2x.webp 2x" src="/upload/applications-1.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="subtitle">Разработка нового продукта</h3>
+                    <p class="mb-0">Экономьте время и&nbsp;деньги на&nbsp;проектирование и&nbsp;производство новых моделей</p>
                 </li>
-                <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="applications__item-img" src="/upload/applications-2.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="applications__item-title subtitle">Восстановление и оцифровка существующих изделий</h3>
-                    <p class="mb-0">Экономьте время и деньги на проектирование и производство новых моделей</p>
+                <li class="col-sm-6 col-lg-4">
+                    <img class="applications__img img-fluid" srcset="/upload/applications-2.webp 1x, /upload/applications-2@2x.webp 2x" src="/upload/applications-2.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="subtitle">Восстановление и&nbsp;оцифровка существующих изделий</h3>
+                    <p class="mb-0">Экономьте время и&nbsp;деньги на&nbsp;проектирование и&nbsp;производство новых моделей</p>
                 </li>
-                <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="applications__item-img" src="/upload/applications-3.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="applications__item-title subtitle">Наука и образование</h3>
-                    <p class="mb-0">Используйте Peel 3D для тестирования новых способов производства и обучения инновационным технологиям в вузах и школах</p>
+                <li class="col-sm-6 col-lg-4">
+                    <img class="applications__img img-fluid" srcset="/upload/applications-3.webp 1x, /upload/applications-3@2x.webp 2x" src="/upload/applications-3.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="subtitle">Наука и&nbsp;образование</h3>
+                    <p class="mb-0">Используйте Peel 3D&nbsp;для тестирования новых способов производства и&nbsp;обучения инновационным технологиям в&nbsp;вузах и&nbsp;школах</p>
                 </li>
-                <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="applications__item-img" src="/upload/applications-4.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="applications__item-title subtitle">Сохранение культурных ценностей</h3>
-                    <p class="mb-0">Создавайте 3D-модели объектов искусства и архитектуры с сохранением цвета и текстуры</p>
+                <li class="col-sm-6 col-lg-4">
+                    <img class="applications__img img-fluid" srcset="/upload/applications-4.webp 1x, /upload/applications-4@2x.webp 2x" src="/upload/applications-4.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="subtitle">Сохранение культурных ценностей</h3>
+                    <p class="mb-0">Создавайте 3D&#8209;модели объектов искусства и&nbsp;архитектуры с&nbsp;сохранением цвета и&nbsp;текстуры</p>
                 </li>
-                <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="applications__item-img" src="/upload/applications-5.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="applications__item-title subtitle">Быстрая помощь в решении медицинских задач</h3>
-                    <p class="mb-0">Сканируйте человеческое тело и индивидуальные медицинские изделия для решения клинических случаев</p>
+                <li class="col-sm-6 col-lg-4">
+                    <img class="applications__img img-fluid" srcset="/upload/applications-5.webp 1x, /upload/applications-5@2x.webp 2x" src="/upload/applications-5.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="subtitle">Быстрая помощь в&nbsp;решении медицинских задач</h3>
+                    <p class="mb-0">Сканируйте человеческое тело и&nbsp;индивидуальные медицинские изделия для решения клинических случаев</p>
                 </li>
-                <li class="applications__item col-sm-6 col-lg-4">
-                    <img class="applications__item-img" src="/upload/applications-6.jpg" alt="" width="340" height="239" loading="lazy">
-                    <h3 class="applications__item-title subtitle">Творчество</h3>
-                    <p class="mb-0">Подарите вечную жизнь вашим творениям, поместив их в виртуальную библиотеку</p>
+                <li class="col-sm-6 col-lg-4">
+                    <img class="applications__img img-fluid" srcset="/upload/applications-6.webp 1x, /upload/applications-6@2x.webp 2x" src="/upload/applications-6.jpg" alt="" width="340" height="239" loading="lazy">
+                    <h3 class="subtitle">Творчество</h3>
+                    <p class="mb-0">Подарите вечную жизнь вашим творениям, поместив их&nbsp;в&nbsp;виртуальную библиотеку</p>
                 </li>
             </ul>
         </section>
@@ -341,13 +355,13 @@
             <div class="banner__wrapper">
                 <div class="section__row row align-items-center">
                     <div class="col-md-6 col-lg-8">
-                        <h2 class="banner__title title title--small">Подарите вечную жизнь вашим творениям, поместив их в виртуальную библиотеку</h2>
+                        <h2 class="title title--small">Подарите вечную жизнь вашим творениям, поместив их&nbsp;в&nbsp;виртуальную библиотеку</h2>
                         <div class="description">
-                            <p>Узнайте, сможет ли наше оборудование решить вашу задачу.</p>
+                            <p>Узнайте, сможет&nbsp;ли наше оборудование решить вашу задачу.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex">
-                        <a class="banner__button button button--secondary ms-md-auto" href="#">Оставить заявку</a>
+                        <a class="banner__button button button--secondary ms-md-auto" href="#popup-form-25">Оставить заявку</a>
                     </div>
                 </div>
             </div>
@@ -356,13 +370,13 @@
 
         <section class="software section custom-container container-fluid">
             <div class="section__row row align-items-center">
-                <div class="software__img col-md-6">
-                    <img class="img-fluid" src="/upload/peel-os.png" alt="Ноутбук с программой Peel.OS" width="538" height="403" loading="lazy">
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid" srcset="/upload/peel-os.webp 1x, /upload/peel-os@2x.webp 2x" src="/upload/peel-os.png" alt="Ноутбук с программой Peel.OS" width="538" height="403" loading="lazy">
                 </div>
                 <div class="col-md-6">
-                    <h2 class="software__title subtitle">Софт для Peel 3D</h2>
+                    <h2 class="subtitle">Софт для Peel 3D</h2>
                     <div class="description">
-                        <p>Мощная платформа для обработки данных 3D‑сканирования и реверс‑инжиниринга полученной 3D‑модели</p>
+                        <p>Мощная платформа для обработки данных 3D&#8209;сканирования и&nbsp;реверс‑инжиниринга полученной 3D&#8209;модели</p>
                     </div>
                     <a class="software__button button button--primary" href="/catalog/software/">Узнать больше</a>
                 </div>
@@ -370,130 +384,129 @@
         </section>
         <!-- /.software -->
 
-        <section class="clients section custom-container container-fluid">
-            <h2 class="clients__title title">Клиенты Peel 3D</h2>
-            <div class="clients__slider-wrapper">
-                <div class="clients__swiper swiper">
-                    <ul class="clients__list swiper-wrapper">
-                        <li class="clients__item swiper-slide">
+        <section class="clients section custom-container container-fluid" id="clients">
+            <h2 class="title">Клиенты Peel&nbsp;3D</h2>
+            <div class="clients__slider-wrapper slider-wrapper">
+                <div class="clients__slider slider swiper">
+                    <ul class="slider__list swiper-wrapper">
+                        <li class="swiper-slide">
                             <figure class="mb-0">
-                                <div class="clients__item-logo">
-                                    <img class="img-fluid" src="/local/templates/peel3d/img/dwfu.png" alt="Логотип ДВФУ" width="186" height="68" loading="lazy">
+                                <div class="clients__logo">
+                                    <img class="img-fluid" srcset="/local/templates/peel3d/img/dwfu.webp 1x, /local/templates/peel3d/img/dwfu@2x.webp 2x" src="/local/templates/peel3d/img/dwfu.png" alt="Логотип ДВФУ" width="186" height="68" loading="lazy">
                                 </div>
-                                <figcaption>ДВФУ (Владивосток, Россия), вуз</figcaption>
+                                <figcaption>ДВФУ (Владивосток, Россия), ВУЗ</figcaption>
                             </figure>
                         </li>
-                        <li class="clients__item swiper-slide">
-                            <figure class="mb-0"> 
-                                <div class="clients__item-logo">
-                                    <img class="img-fluid" src="/local/templates/peel3d/img/usimm.png" alt="Логотип USIMM" width="193" height="34" loading="lazy">
-                                </div>
-                                <figcaption>USIMM (Канада), центр 3D-услуг и ЧПУ-обработки</figcaption>
-                            </figure>
-                        </li>
-                        <li class="clients__item swiper-slide">
+                        <li class="swiper-slide">
                             <figure class="mb-0">
-                                <div class="clients__item-logo">
-                                    <img src="/local/templates/peel3d/img/medecins.png" alt="Логотип Médecins Sans Frontières" width="114" height="82" loading="lazy">
+                                <div class="clients__logo">
+                                    <img class="img-fluid" srcset="/local/templates/peel3d/img/usimm.webp 1x, /local/templates/peel3d/img/usimm@2x.webp 2x" src="/local/templates/peel3d/img/usimm.png" alt="Логотип USIMM" width="193" height="34" loading="lazy">
                                 </div>
-                                <figcaption>Médecins Sans Frontières (Швейцария), международная медицинская гуманитарная организация</figcaption>
+                                <figcaption>USIMM (Канада), центр 3D&#8209;услуг и&nbsp;ЧПУ-обработки</figcaption>
                             </figure>
                         </li>
-                        <li class="clients__item swiper-slide">
+                        <li class="swiper-slide">
                             <figure class="mb-0">
-                                <div class="clients__item-logo">
-                                    <img class="img-fluid" src="/local/templates/peel3d/img/chabloz.png" alt="Логотип Chabloz" width="165" height="39" loading="lazy">
+                                <div class="clients__logo">
+                                    <img class="img-fluid" srcset="/local/templates/peel3d/img/medecins.webp 1x, /local/templates/peel3d/img/medecins@2x.webp 2x" src="/local/templates/peel3d/img/medecins.png" alt="Логотип Médecins Sans Frontières" width="114" height="82" loading="lazy">
                                 </div>
-                                <figcaption>Chabloz Orthopédie (Франция), производитель ортопедического оборудования</figcaption>
+                                <figcaption>M&eacute;decins Sans Fronti&egrave;res (Швейцария), международная медицинская гуманитарная организация</figcaption>
                             </figure>
                         </li>
-    
-                        <li class="clients__item swiper-slide">
+                        <li class="swiper-slide">
                             <figure class="mb-0">
-                                <div class="clients__item-logo">
-                                    <img class="img-fluid" src="/local/templates/peel3d/img/dwfu.png" alt="Логотип ДВФУ" width="186" height="68" loading="lazy">
+                                <div class="clients__logo">
+                                    <img class="img-fluid" srcset="/local/templates/peel3d/img/chabloz.webp 1x, /local/templates/peel3d/img/chabloz@2x.webp 2x" src="/local/templates/peel3d/img/chabloz.png" alt="Логотип Chabloz" width="165" height="39" loading="lazy">
                                 </div>
-                                <figcaption>ДВФУ (Владивосток, Россия), вуз</figcaption>
+                                <figcaption>Chabloz Orthop&eacute;die (Франция), производитель ортопедического оборудования</figcaption>
                             </figure>
                         </li>
-                        <li class="clients__item swiper-slide">
-                            <figure class="mb-0"> 
-                                <div class="clients__item-logo">
-                                    <img class="img-fluid" src="/local/templates/peel3d/img/usimm.png" alt="Логотип USIMM" width="193" height="34" loading="lazy">
-                                </div>
-                                <figcaption>USIMM (Канада), центр 3D-услуг и ЧПУ-обработки</figcaption>
-                            </figure>
-                        </li>
-                        <li class="clients__item swiper-slide">
+                        <li class="swiper-slide">
                             <figure class="mb-0">
-                                <div class="clients__item-logo">
-                                    <img src="/local/templates/peel3d/img/medecins.png" alt="Логотип Médecins Sans Frontières" width="114" height="82" loading="lazy">
+                                <div class="clients__logo">
+                                    <img class="img-fluid" src="/local/templates/peel3d/img/dwfu.png" alt="Логотип Aeroworks Performance" width="186" height="68" loading="lazy">
                                 </div>
-                                <figcaption>Médecins Sans Frontières (Швейцария), международная медицинская гуманитарная организация</figcaption>
+                                <figcaption>Провайдер 3D&#8209;услуг Aeroworks Performance (США)</figcaption>
                             </figure>
                         </li>
-                        <li class="clients__item swiper-slide">
+                        <li class="swiper-slide">
                             <figure class="mb-0">
-                                <div class="clients__item-logo">
-                                    <img class="img-fluid" src="/local/templates/peel3d/img/chabloz.png" alt="Логотип Chabloz" width="165" height="39" loading="lazy">
+                                <div class="clients__logo">
+                                    <img class="img-fluid" src="/local/templates/peel3d/img/usimm.png" alt="Логотип Undoprototipos" width="193" height="34" loading="lazy">
                                 </div>
-                                <figcaption>Chabloz Orthopédie (Франция), производитель ортопедического оборудования</figcaption>
+                                <figcaption>Центр быстрого прототипирования Undoprototipos (Испания)</figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure class="mb-0">
+                                <div class="clients__logo">
+                                    <img src="/local/templates/peel3d/img/medecins.png" alt="Логотип NCC" width="114" height="82" loading="lazy">
+                                </div>
+                                <figcaption>Производитель автозапчастей NCC (США)</figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure class="mb-0">
+                                <div class="clients__logo">
+                                    <img class="img-fluid" src="/local/templates/peel3d/img/chabloz.png" alt="Логотип SPL Parts" width="165" height="39" loading="lazy">
+                                </div>
+                                <figcaption>Производитель автозапчастей SPL Parts (США)</figcaption>
                             </figure>
                         </li>
                     </ul>
                 </div>
-                <button class="clients__swiper-button swiper-button-prev" type="button"></button>
-                <button class="clients__swiper-button swiper-button-next" type="button"></button>
-                <div class="clients__swiper-pagination"></div>
+                <button class="clients__button-prev slider__button slider__button--prev" type="button"></button>
+                <button class="clients__button-next slider__button slider__button--next" type="button"></button>
+                <div class="clients__pagination slider__pagination"></div>
             </div>
         </section>
         <!-- /.clients -->
 
         <section class="about section custom-container container-fluid" id="about">
-            <h2 class="about__title title">О нас</h2>
+            <h2 class="title">О&nbsp;нас</h2>
             <div class="section__row row">
                 <div class="col-md-6">
                     <div class="description">
-                        <p>KERWAN 3D — дистрибьютор 3D‑сканеров, программного обеспечения, 3D‑принтеров и расходных материалов ведущих мировых производителей на территории стран СНГ.</p>
-                        <p>У нас вы можете заказать 3D‑оборудование с доставкой, бесплатно отсканировать изделие на вашем предприятии или заказать демонстрацию сканера онлайн.</p>
-                        <p>Наша команда инженеров и технологов разрабатывает и внедряет уникальные 3D‑решения:</p>
+                        <p>KERWAN 3D&nbsp;&mdash; дистрибьютор 3D&#8209;сканеров, программного обеспечения, 3D&#8209;принтеров и&nbsp;расходных материалов ведущих мировых производителей на&nbsp;территории стран СНГ.</p>
+                        <p>У&nbsp;нас вы&nbsp;можете заказать 3D&#8209;оборудование с&nbsp;доставкой, бесплатно отсканировать изделие на&nbsp;вашем предприятии или заказать демонстрацию сканера онлайн.</p>
+                        <p>Наша команда инженеров и&nbsp;технологов разрабатывает и&nbsp;внедряет уникальные 3D&#8209;решения:</p>
                         <ul>
-                            <li>На промышленных предприятиях</li>
-                            <li>В исследовательских центрах</li>
-                            <li>В проектах малого и среднего бизнеса</li>
+                            <li>На&nbsp;промышленных предприятиях</li>
+                            <li>В&nbsp;исследовательских центрах</li>
+                            <li>В&nbsp;проектах малого и&nbsp;среднего бизнеса</li>
                         </ul>
-                        <p>Если вам нужно выполнить сканирование человека, вы можете заказать его у наших специалистов.</p>
+                        <p>Если вам нужно выполнить сканирование человека, вы&nbsp;можете заказать его у&nbsp;наших специалистов.</p>
                     </div>
-                    <a class="about__link link link--secondary" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">Перейти на сайт компании</a>
+                    <a class="about__link link link--secondary" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">Перейти на&nbsp;сайт компании</a>
                 </div>
                 <div class="col-md-6">
                     <article class="banner banner--request">
                         <img class="banner__logo img-fluid" src="/local/templates/peel3d/img/peel-3d-logo.svg" alt="Логотип Peel 3D" width="101" height="41" loading="lazy">
-                        <h3 class="banner__title subtitle">Узнайте, решит ли Peel 3D вашу задачу!</h3>
+                        <h3 class="banner__title subtitle">Узнайте, решит&nbsp;ли Peel 3D&nbsp;вашу задачу!</h3>
                         <div class="banner__description">
-                            <p>Закажите онлайн-демонстрацию 3D‑сканера</p>
+                            <p>Закажите онлайн-демонстрацию 3D&#8209;сканера</p>
                         </div>
-                        <a class="banner__button button button--primary" href="#">Оставить заявку</a>
+                        <a class="banner__button button button--primary" href="#popup-form-35">Оставить заявку</a>
                     </article>
                 </div>
             </div>
         </section>
         <!-- /.about -->
 
-        <section class="about-company section custom-container container-fluid">
+        <section class="section custom-container container-fluid">
             <div class="section__row row">
                 <div class="col-md-6">
-                    <h2 class="title mb-0">О компании</h2>
+                    <h2 class="title mb-0">О&nbsp;компании</h2>
                 </div>
                 <div class="col-md-6">
                     <div class="description">
-                        <p>Мы являемся официальным дистрибутором 3D‑оборудования в Казахстане, что позволяет нам продавать продукцию от ведущих производителей мира (США, Канада, Италия, Испания, Китай).</p>
-                        <p>Компания KERWAN 3D предлагает купить портативные лазерные устройства в Казахстане, Узбекистане, Киргизии по доступным ценам.</p>
-                        <p>Наша компания гарантирует быструю доставку и качественное сервисное обслуживание представленного оборудования.</p>
-                        <p>Мы также поможем с выбором техники для использования для различных производственных задач, конкретного бизнеса или любительского использования. Все модели сканеров в наличии на нашем складе.</p>
-                        <p>Стоимость изделий зависит от:</p>
+                        <p>Мы&nbsp;являемся официальным дистрибутором 3D&#8209;оборудования в&nbsp;Казахстане, что позволяет нам продавать продукцию от&nbsp;ведущих производителей мира (США, Канада, Италия, Испания, Китай).</p>
+                        <p>Компания KERWAN 3D&nbsp;предлагает купить портативные лазерные устройства в&nbsp;Казахстане, Узбекистане, Киргизии по&nbsp;доступным ценам.</p>
+                        <p>Наша компания гарантирует быструю доставку и&nbsp;качественное сервисное обслуживание представленного оборудования.</p>
+                        <p>Мы&nbsp;также поможем с&nbsp;выбором техники для использования для различных производственных задач, конкретного бизнеса или любительского использования. Все модели сканеров в&nbsp;наличии на&nbsp;нашем складе.</p>
+                        <p>Стоимость изделий зависит&nbsp;от:</p>
                         <ul>
-                            <li>Точности и разрешения сканируемых объектов</li>
+                            <li>Точности и&nbsp;разрешения сканируемых объектов</li>
                             <li>Характеристик модели</li>
                             <li>Наличия дополнительного функционала</li>
                         </ul>
@@ -502,44 +515,44 @@
             </div>
         </section>
         <!-- /.about-company -->
-         
-        <section class="order section custom-container container-fluid">
+
+        <section class="section custom-container container-fluid">
             <div class="section__row row">
                 <div class="col-md-6">
                     <h2 class="title mb-0">Как оформить заказ</h2>
                 </div>
                 <div class="col-md-6">
                     <div class="description">
-                        <p>Заказать ручные 3D-сканеры вы можете, заполнив онлайн-форму на нашем сайте. Эксперты KERWAN 3D проконсультируют вас и помогут выбрать бюджетный вариант, подходящий для вашей цели. Задать вопрос можно в онлайн чате на сайте. Мы осуществляем доставку по Казахстану и странам СНГ.</p>
+                        <p>Заказать ручные 3D&#8209;сканеры вы&nbsp;можете, заполнив онлайн-форму на&nbsp;нашем сайте. Эксперты KERWAN 3D&nbsp;проконсультируют вас и&nbsp;помогут выбрать бюджетный вариант, подходящий для вашей цели. Задать вопрос можно в&nbsp;онлайн чате на&nbsp;сайте. Мы&nbsp;осуществляем доставку по&nbsp;Казахстану и&nbsp;странам СНГ.</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- /.order -->
     </main>
-    
+
     <footer class="site-footer">
-        <div class="site-footer__container custom-container container-fluid">
+        <div class="site-footer__container custom-container container-fluid" itemscope itemtype="https://schema.org/Organization">
             <a class="site-footer__logo site-footer__logo--kerwan" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">
-                <img class="img-fluid" src="/local/templates/peel3d/img/kerwar-logo-light.svg" alt="Логотип Kerwan" width="123" height="41" loading="lazy">
+                <img class="img-fluid" src="/local/templates/peel3d/img/kerwar-logo-light.svg" alt="Логотип Kerwan" width="123" height="41" loading="lazy" itemprop="logo">
             </a>
             <ul class="site-footer__navigation">
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <div class="site-footer__navigation-wrapper">
                         <a class="site-footer__navigation-link" href="/catalog/">Каталог</a>
-                        <button class="site-footer__navigation-toggle d-sm-none" type="button">
+                        <button class="site-footer__navigation-toggle d-sm-none" type="button" aria-expanded="false" aria-controls="footer-submenu-catalog">
                             <span class="visually-hidden">Открыть подменю Каталог</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist" id="footer-submenu-catalog">
                         <li>
                             <a href="/catalog/peel-3/">Peel 3</a>
                         </li>
                         <li>
-                            <a href="/catalog/peel-3-cad/">Peel 3.CAD</a>
+                            <a href="/catalog/peel-3-cad/">Peel&nbsp;3.CAD</a>
                         </li>
                         <li>
-                            <a href="/catalog/peel-3-pro-cad/">Peel 3 Pro.CAD</a>
+                            <a href="/catalog/peel-3-pro-cad/">Peel&nbsp;3 Pro.CAD</a>
                         </li>
                         <li>
                             <a href="/catalog/education/">Решения для образования</a>
@@ -552,16 +565,16 @@
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <div class="site-footer__navigation-wrapper">
                         <a class="site-footer__navigation-link" href="/catalog/software/">ПО</a>
-                        <button class="site-footer__navigation-toggle d-sm-none" type="button">
+                        <button class="site-footer__navigation-toggle d-sm-none" type="button" aria-expanded="false" aria-controls="footer-submenu-software">
                             <span class="visually-hidden">Открыть подменю ПО</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist" id="footer-submenu-software">
                         <li>
                             <a href="#">Peel.OS</a>
                         </li>
                         <li>
-                            <a href="#">Peel 3.CAD</a>
+                            <a href="#">Peel&nbsp;3.CAD</a>
                         </li>
                         <li>
                             <a href="#">Peel.CAD Pro</a>
@@ -571,11 +584,11 @@
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <div class="site-footer__navigation-wrapper">
                         <span class="site-footer__navigation-link">Решаемые задачи</span>
-                        <button class="site-footer__navigation-toggle d-sm-none" type="button">
+                        <button class="site-footer__navigation-toggle d-sm-none" type="button" aria-expanded="false" aria-controls="footer-submenu-tasks">
                             <span class="visually-hidden">Открыть подменю Решаемые задачи</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist" id="footer-submenu-tasks">
                         <li>
                             <a href="/tasks-solved/object-scan/">Сканирование объекта</a>
                         </li>
@@ -587,63 +600,63 @@
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <div class="site-footer__navigation-wrapper">
                         <a class="site-footer__navigation-link" href="/cases/">Галерея проектов</a>
-                        <button class="site-footer__navigation-toggle d-sm-none" type="button">
+                        <button class="site-footer__navigation-toggle d-sm-none" type="button" aria-expanded="false" aria-controls="footer-submenu-cases">
                             <span class="visually-hidden">Открыть подменю Галерея проектов</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist" id="footer-submenu-cases">
                         <li>
                             <a href="/cases/#solution_videos">Видео</a>
                         </li>
                         <li>
-                            <a href="/cases/#video">Примеры 3D-моделей</a>
+                            <a href="/cases/#video">Примеры 3D&#8209;моделей</a>
                         </li>
                     </ul>
                 </li>
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
-                    <a class="site-footer__navigation-link" href="/#about">О компании</a>
+                    <a class="site-footer__navigation-link" href="/#about">О&nbsp;компании</a>
                 </li>
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <a class="site-footer__navigation-link" href="/faq/">FAQ</a>
                 </li>
             </ul>
             <div class="site-footer__social social">
-                <p>Мы в социальных сетях:</p>
-                <ul class="social__list">
+                <p>Мы&nbsp;в&nbsp;социальных сетях:</p>
+                <ul class="social__list" aria-label="Социальные сети">
                     <li class="social__item">
-                        <a class="social__link social__link--youtube" href="https://www.youtube.com/@KERWAN3D" target="_blank" rel="noopener noreferrer">
+                        <a class="social__link social__link--youtube" href="https://www.youtube.com/@KERWAN3D" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
-                                    <path stroke-linecap="round" d="M2.45 11.419c0-3.017.3-4.526 1.237-5.463s2.446-.937 5.463-.937h5.7c3.017 0 4.525 0 5.463.937s1.237 2.446 1.237 5.463v1.162c0 3.017-.3 4.526-1.237 5.463s-2.446.937-5.463.937h-5.7c-3.017 0-4.526 0-5.463-.937S2.45 15.598 2.45 12.581z"./>
-                                    <path d="m14.686 11.491l-4.268-2.667a.6.6 0 0 0-.918.509v5.335a.6.6 0 0 0 .918.508l4.268-2.667a.6.6 0 0 0 0-1.018Z"./>
+                                    <path stroke-linecap="round" d="M2.45 11.419c0-3.017.3-4.526 1.237-5.463s2.446-.937 5.463-.937h5.7c3.017 0 4.525 0 5.463.937s1.237 2.446 1.237 5.463v1.162c0 3.017-.3 4.526-1.237 5.463s-2.446.937-5.463.937h-5.7c-3.017 0-4.526 0-5.463-.937S2.45 15.598 2.45 12.581z" />
+                                    <path d="m14.686 11.491l-4.268-2.667a.6.6 0 0 0-.918.509v5.335a.6.6 0 0 0 .918.508l4.268-2.667a.6.6 0 0 0 0-1.018Z" />
                                 </g>
                             </svg>
                             <span class="visually-hidden">YouTube</span>
                         </a>
                     </li>
-                    <li class="social__item social__link--vk">
-                        <a class="social__link" href="https://vk.com/kerwan3d" target="_blank" rel="noopener noreferrer">
+                    <li class="social__item">
+                        <a class="social__link social__link--vk" href="https://vk.com/kerwan3d" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10.749V7.053c0-.833-.151-1-.98-1L10.67 6c-.732 0-1.098 0-1.246.237s.016.562.343 1.21c.182.36.28.621.28 1.025v2.66c0 .84 0 1.261-.32 1.386c-.32.124-.585-.158-1.117-.722c-1.3-1.384-1.978-3.112-2.423-4.996c-.092-.39-.138-.585-.276-.693S5.576 6 5.184 6h-2.2c-.482 0-.723 0-.874.17c-.15.171-.121.389-.063.824c.528 3.927 3.981 10.366 10.36 10.98c1.13.108 1.593-.197 1.593-1.435c0-.702-.015-1.836.868-1.985c.463-.078.774.087 1.291.52c.896.752 1.366 1.67 1.693 2.367c.217.462.378.559.888.559h2.074c1.048 0 1.333-.256.866-1.24a9 9 0 0 0-2.196-2.893c-.636-.547-.953-.82-.97-1.022c-.019-.201.214-.486.68-1.056c.9-1.102 2.126-2.831 2.698-4.666c.284-.91.017-1.123-.904-1.123h-1.863c-.903 0-.902-.031-1.115.993c-.346 1.661-1.478 3.258-2.542 4.345c-.505.516-.81.827-1.125.7S14 11.524 14 10.748" color="currentColor"./>
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10.749V7.053c0-.833-.151-1-.98-1L10.67 6c-.732 0-1.098 0-1.246.237s.016.562.343 1.21c.182.36.28.621.28 1.025v2.66c0 .84 0 1.261-.32 1.386c-.32.124-.585-.158-1.117-.722c-1.3-1.384-1.978-3.112-2.423-4.996c-.092-.39-.138-.585-.276-.693S5.576 6 5.184 6h-2.2c-.482 0-.723 0-.874.17c-.15.171-.121.389-.063.824c.528 3.927 3.981 10.366 10.36 10.98c1.13.108 1.593-.197 1.593-1.435c0-.702-.015-1.836.868-1.985c.463-.078.774.087 1.291.52c.896.752 1.366 1.67 1.693 2.367c.217.462.378.559.888.559h2.074c1.048 0 1.333-.256.866-1.24a9 9 0 0 0-2.196-2.893c-.636-.547-.953-.82-.97-1.022c-.019-.201.214-.486.68-1.056c.9-1.102 2.126-2.831 2.698-4.666c.284-.91.017-1.123-.904-1.123h-1.863c-.903 0-.902-.031-1.115.993c-.346 1.661-1.478 3.258-2.542 4.345c-.505.516-.81.827-1.125.7S14 11.524 14 10.748" color="currentColor" />
                             </svg>
                             <span class="visually-hidden">VK</span>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--instagram" href="https://www.instagram.com/kerwan3d/" target="_blank" rel="noopener noreferrer">
+                        <a class="social__link social__link--instagram" href="https://www.instagram.com/kerwan3d/" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"./>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37zm1.5-4.87h.01"./>
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37zm1.5-4.87h.01" />
                                 </g>
                             </svg>
                             <span class="visually-hidden">Instagram</span>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--facebook" href="https://www.facebook.com/kerwan3d" target="_blank" rel="noopener noreferrer">
+                        <a class="social__link social__link--facebook" href="https://www.facebook.com/kerwan3d" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2Z"./>
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2Z" />
                             </svg>
                             <span class="visually-hidden">Facebook</span>
                         </a>
@@ -652,18 +665,18 @@
             </div>
             <ul class="site-footer__contacts contacts">
                 <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+77172695922">+7 (7172) 69 59 22</a>
+                    <a class="contacts__link" href="tel:+77172695922" itemprop="telephone">+7 (7172) 69 59 22</a>
                 </li>
                 <li class="contacts__item">
-                    <a class="contacts__link" href="mailto:sales3d@kerwanltd.com">sales3d@kerwanltd.com</a>
+                    <a class="contacts__link" href="mailto:sales3d@kerwanltd.com" itemprop="email">sales3d@kerwanltd.com</a>
                 </li>
             </ul>
             <a class="site-footer__download" href="#popup-form-34">Скачать брошюру</a>
-            <a class="site-footer__button button button--secondary" href="#popup-form-50">Подписаться на новости</a>
+            <a class="site-footer__button button button--secondary" href="#popup-form-50">Подписаться на&nbsp;новости</a>
             <div class="site-footer__meta">
                 <a href="/sitemap/">Карта сайта</a>
                 <a href="https://kerwanltd.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
-                <small class="site-footer__copyright">© 2025 KERWAN ТОО «Керуэн», Астана</small>
+                <small class="site-footer__copyright">&copy;&nbsp;2025&nbsp;KERWAN <span itemprop="name">ТОО &laquo;Керуэн&raquo;</span>, <span itemprop="address">Астана</span></small>
             </div>
             <a class="site-footer__logo site-footer__logo--peel" href="/">
                 <img class="img-fluid" src="/local/templates/peel3d/img/peel-3d-logo-light.svg" alt="Логотип Peel 3D" width="105" height="43" loading="lazy">
@@ -676,4 +689,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="/local/templates/peel3d/js/main.js"></script>
 </body>
+
 </html>

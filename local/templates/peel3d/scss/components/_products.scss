@@ -1,23 +1,19 @@
-.products__title {
-    margin-bottom: 0.69em;
-}
-
+// Продукты Peel 3D
 .products__list {
-    padding-left: 0;
-    margin-bottom: 0;
-    margin-top: 45px;
+    @include reset-list;
+    margin-top: rem(45);
 
     @media (min-width: 768px) {
-        margin-top: 75px;
+        margin-top: rem(75);
     }
 }
 
 .products__item {
     &:not(:last-child) {
-        margin-bottom: 60px;
+        margin-bottom: rem(60);
 
         @media (min-width: 992px) {
-            margin-bottom: 120px;
+            margin-bottom: rem(100);
         }
     }
 
@@ -30,32 +26,26 @@
     }
 }
 
-.products__item-title {
-    margin-bottom: 5px;
-}
-
 .products__item-lead {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 1.56em;
     color: $color-primary;
 }
 
 .products__item-list {
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style-type: none;
+    @include reset-list;
 
     li {
         position: relative;
-        padding-left: 35px;
+        padding-left: rem(35);
 
         &::before { 
             content: "";
             position: absolute;
-            top: -2px;
+            top: -rem(2);
             left: 0;
-            width: 25px;
-            height: 25px;
+            width: rem(25);
+            height: rem(25);
             background: url("../img/icons/check.svg") no-repeat center / contain;
         }
 
@@ -66,5 +56,5 @@
 }
 
 .products__item-button {
-    margin-top: 30px;
+    margin-top: rem(30);
 }

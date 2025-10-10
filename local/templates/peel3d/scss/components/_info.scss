@@ -1,13 +1,6 @@
-.info__title {
-    margin-bottom: 1.11em;
-
-    @media (min-width: 768px) {
-        max-width: 600px;
-    }
-}
-
+// Блок с информацией о 3D-сканере Peel 3
 .info__buttons-wrapper {
-    margin-top: 30px;
+    margin-top: rem(30);
 }
 
 .info__video-link {
@@ -21,10 +14,11 @@
         right: 0;
         bottom: 0;
         margin: auto;
-        width: 60px;
-        height: 60px;
+        width: rem(60);
+        height: rem(60);
         background-color: $color-primary;
         mask: url("../img/icons/play.svg") no-repeat center / contain;
+        transition: background-color 0.2s ease-in-out;
     }
 
     &:hover::before,
@@ -35,23 +29,24 @@
     img {
         width: 100%;
         height: auto;   
-        border-radius: 15px;
+        border-radius: rem(15);
     }
 }
 
 .info__download {
     position: relative;
-    padding-left: 35px;
+    padding-left: rem(35);
 
     &::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        width: 25px;
-        height: 25px;
+        width: rem(25);
+        height: rem(25);
         background-color: $color-dark;
         mask: url("../img/icons/arrow-line-down.svg") no-repeat center / contain;
+        transition: background-color 0.2s ease-in-out;
     }
 
     &:hover::before,

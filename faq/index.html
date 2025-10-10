@@ -9,30 +9,30 @@
     <link rel="stylesheet" href="/local/templates/peel3d/scss/style.css">
 </head>
 <body>
-    <header class="site-header position-sticky">
-        <div class="site-header__container container-fluid">
+    <header class="site-header">
+        <div class="site-header__container custom-container container-fluid">
             <a class="site-header__logo" href="/">
                 <img class="img-fluid" src="/local/templates/peel3d/img/peel-3d-logo.svg" alt="Логотип Peel 3D" width="134" height="55">
             </a>
-            <div class="site-header__wrapper">
-                <nav class="site-header__navigation site-navigation">
+            <div class="site-header__wrapper" id="site-header__wrapper">
+                <nav class="site-header__navigation site-navigation" aria-label="Главное меню">
                     <ul class="site-navigation__list">
                         <li class="site-navigation__item site-navigation__item--children">
                             <div class="site-navigation__wrapper">
-                                <a class="site-navigation__link" href="#">3D-сканеры</a>
-                                <button class="site-navigation__toggle d-sm-none" type="button">
-                                    <span class="visually-hidden">Открыть подменю 3D-сканеры</span>
+                                <a class="site-navigation__link" href="/catalog/">3D&#8209;сканеры</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button" aria-expanded="false" aria-controls="header-submenu-3dscan">
+                                    <span class="visually-hidden">Открыть подменю 3D&#8209;сканеры</span>
                                 </button>
                             </div>
-                            <ul class="site-navigation__sublist">
+                            <ul class="site-navigation__sublist" id="header-submenu-3dscan">
                                 <li>
                                     <a href="/catalog/peel-3/">Peel 3</a>
                                 </li>
                                 <li>
-                                    <a href="/catalog/peel-3-cad/">Peel 3.CAD</a>
+                                    <a href="/catalog/peel-3-cad/">Peel&nbsp;3.CAD</a>
                                 </li>
                                 <li>
-                                    <a href="/catalog/peel-3-pro-cad/">Peel 3 Pro.CAD</a>
+                                    <a href="/catalog/peel-3-pro-cad/">Peel&nbsp;3 Pro.CAD</a>
                                 </li>
                                 <li>
                                     <a href="/catalog/education/">Решения для образования</a>
@@ -44,17 +44,17 @@
                         </li>
                         <li class="site-navigation__item site-navigation__item--children">
                             <div class="site-navigation__wrapper">
-                                <a class="site-navigation__link" href="#">ПО</a>
-                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                <a class="site-navigation__link" href="/catalog/software/">ПО</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button" aria-expanded="false" aria-controls="header-submenu-software">
                                     <span class="visually-hidden">Открыть подменю ПО</span>
                                 </button>
                             </div>
-                            <ul class="site-navigation__sublist">
+                            <ul class="site-navigation__sublist" id="header-submenu-software">
                                 <li>
                                     <a href="#">Peel.OS</a>
                                 </li>
                                 <li>
-                                    <a href="#">Peel 3.CAD</a>
+                                    <a href="#">Peel&nbsp;3.CAD</a>
                                 </li>
                                 <li>
                                     <a href="#">Peel.CAD Pro</a>
@@ -63,12 +63,12 @@
                         </li>
                         <li class="site-navigation__item site-navigation__item--children">
                             <div class="site-navigation__wrapper">
-                                <a class="site-navigation__link" href="#">Решаемые задачи</a>
-                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                <span class="site-navigation__link">Решаемые задачи</span>
+                                <button class="site-navigation__toggle d-sm-none" type="button" aria-expanded="false" aria-controls="header-submenu-tasks">
                                     <span class="visually-hidden">Открыть подменю Решаемые задачи</span>
                                 </button>
                             </div>
-                            <ul class="site-navigation__sublist">
+                            <ul class="site-navigation__sublist" id="header-submenu-tasks">
                                 <li>
                                     <a href="/tasks-solved/object-scan/">Сканирование объекта</a>
                                 </li>
@@ -79,27 +79,27 @@
                         </li>
                         <li class="site-navigation__item site-navigation__item--children">
                             <div class="site-navigation__wrapper">
-                                <a class="site-navigation__link" href="#">Галерея проектов</a>
-                                <button class="site-navigation__toggle d-sm-none" type="button">
+                                <a class="site-navigation__link" href="/cases/">Галерея проектов</a>
+                                <button class="site-navigation__toggle d-sm-none" type="button" aria-expanded="false" aria-controls="header-submenu-cases">
                                     <span class="visually-hidden">Открыть подменю Галерея проектов</span>
                                 </button>
                             </div>
-                            <ul class="site-navigation__sublist">
+                            <ul class="site-navigation__sublist" id="header-submenu-cases">
                                 <li>
                                     <a href="/cases/#solution_videos">Видео</a>
                                 </li>
                                 <li>
-                                    <a href="/cases/#video">Примеры 3D-моделей</a>
+                                    <a href="/cases/#video">Примеры 3D&#8209;моделей</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="site-navigation__item">
-                             <a class="site-navigation__link" href="/faq/">FAQ</a>
+                            <a class="site-navigation__link" href="/faq/">FAQ</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="site-header__contacts">
-                    <a class="site-header__link" href="#about">О нас</a>
+                    <a class="site-header__link" href="#about">О&nbsp;нас</a>
                     <ul class="site-header__contacts-list">
                         <li>
                             <a href="mailto:sales3d@kerwanltd.com">sales3d@kerwanltd.com</a>
@@ -113,13 +113,14 @@
             <a class="site-header__logo" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">
                 <img class="img-fluid" src="/local/templates/peel3d/img/kerwan-logo.svg" alt="Логотип Kerwan" width="148" height="49">
             </a>
-            <button class="site-header__toggle d-lg-none ms-auto" type="button">
-                <span class="site-header__toggle-line"></span>
+            <button class="site-header__toggle d-lg-none ms-auto" type="button" aria-expanded="false" aria-controls="site-header__wrapper">
                 <span class="visually-hidden">Открыть меню</span>
+                <span class="site-header__toggle-line"></span>
             </button>
         </div>
     </header>
     <!-- /.site-header -->
+
     <main>
         <div class="hero hero--light">
             <div class="custom-container container-fluid">
@@ -138,7 +139,6 @@
                             <p>Здесь вы найдете ответы на самые распространённые вопросы, которые помогут быстро разобраться в основных моментах.</p>
                         </div>
                     </div>
-                    <div class="col-md-6"></div>
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
             <div class="banner__wrapper">
                 <div class="section__row row align-items-center">
                     <div class="col-md-8">
-                        <h2 class="banner__title title title--small">Остались вопросы по решению?</h2>
+                        <h2 class="title title--small">Остались вопросы по решению?</h2>
                         <div class="description">
                             <p>Отправьте заявку, и наши специалисты бесплатно проконсультируют вас по решениям peel 3d. Мы рады помочь в реализации ваших проектов.</p>
                         </div>
@@ -186,7 +186,7 @@
         <!-- /. -->
 
         <section class="questions section custom-container container-fluid">
-            <h2 class="questions__title title">Остались вопросы?</h2>
+            <h2 class="questions__title title mx-auto">Остались вопросы?</h2>
             <div class="questions__description description">Заполните заявку, и наши специалисты свяжутся с вами в ближайшее время!</div>
             <a class="questions__button button button--primary" href="#">Оставить заявку</a>
         </section>
@@ -194,27 +194,27 @@
     </main>
     
     <footer class="site-footer">
-        <div class="site-footer__container custom-container container-fluid">
+        <div class="site-footer__container custom-container container-fluid" itemscope itemtype="https://schema.org/Organization">
             <a class="site-footer__logo site-footer__logo--kerwan" href="https://kerwanltd.com/3d/" target="_blank" rel="noopener noreferrer">
-                <img class="img-fluid" src="/local/templates/peel3d/img/kerwar-logo-light.svg" alt="Логотип Kerwan" width="123" height="41" loading="lazy">
+                <img class="img-fluid" src="/local/templates/peel3d/img/kerwar-logo-light.svg" alt="Логотип Kerwan" width="123" height="41" loading="lazy" itemprop="logo">
             </a>
             <ul class="site-footer__navigation">
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <div class="site-footer__navigation-wrapper">
                         <a class="site-footer__navigation-link" href="/catalog/">Каталог</a>
-                        <button class="site-footer__navigation-toggle d-sm-none" type="button">
+                        <button class="site-footer__navigation-toggle d-sm-none" type="button" aria-expanded="false" aria-controls="footer-submenu-catalog">
                             <span class="visually-hidden">Открыть подменю Каталог</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist" id="footer-submenu-catalog">
                         <li>
                             <a href="/catalog/peel-3/">Peel 3</a>
                         </li>
                         <li>
-                            <a href="/catalog/peel-3-cad/">Peel 3.CAD</a>
+                            <a href="/catalog/peel-3-cad/">Peel&nbsp;3.CAD</a>
                         </li>
                         <li>
-                            <a href="/catalog/peel-3-pro-cad/">Peel 3 Pro.CAD</a>
+                            <a href="/catalog/peel-3-pro-cad/">Peel&nbsp;3 Pro.CAD</a>
                         </li>
                         <li>
                             <a href="/catalog/education/">Решения для образования</a>
@@ -227,16 +227,16 @@
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <div class="site-footer__navigation-wrapper">
                         <a class="site-footer__navigation-link" href="/catalog/software/">ПО</a>
-                        <button class="site-footer__navigation-toggle d-sm-none" type="button">
+                        <button class="site-footer__navigation-toggle d-sm-none" type="button" aria-expanded="false" aria-controls="footer-submenu-software">
                             <span class="visually-hidden">Открыть подменю ПО</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist" id="footer-submenu-software">
                         <li>
                             <a href="#">Peel.OS</a>
                         </li>
                         <li>
-                            <a href="#">Peel 3.CAD</a>
+                            <a href="#">Peel&nbsp;3.CAD</a>
                         </li>
                         <li>
                             <a href="#">Peel.CAD Pro</a>
@@ -246,11 +246,11 @@
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <div class="site-footer__navigation-wrapper">
                         <span class="site-footer__navigation-link">Решаемые задачи</span>
-                        <button class="site-footer__navigation-toggle d-sm-none" type="button">
+                        <button class="site-footer__navigation-toggle d-sm-none" type="button" aria-expanded="false" aria-controls="footer-submenu-tasks">
                             <span class="visually-hidden">Открыть подменю Решаемые задачи</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist" id="footer-submenu-tasks">
                         <li>
                             <a href="/tasks-solved/object-scan/">Сканирование объекта</a>
                         </li>
@@ -262,63 +262,63 @@
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <div class="site-footer__navigation-wrapper">
                         <a class="site-footer__navigation-link" href="/cases/">Галерея проектов</a>
-                        <button class="site-footer__navigation-toggle d-sm-none" type="button">
+                        <button class="site-footer__navigation-toggle d-sm-none" type="button" aria-expanded="false" aria-controls="footer-submenu-cases">
                             <span class="visually-hidden">Открыть подменю Галерея проектов</span>
                         </button>
                     </div>
-                    <ul class="site-footer__navigation-sublist d-none d-sm-block">
+                    <ul class="site-footer__navigation-sublist" id="footer-submenu-cases">
                         <li>
                             <a href="/cases/#solution_videos">Видео</a>
                         </li>
                         <li>
-                            <a href="/cases/#video">Примеры 3D-моделей</a>
+                            <a href="/cases/#video">Примеры 3D&#8209;моделей</a>
                         </li>
                     </ul>
                 </li>
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
-                    <a class="site-footer__navigation-link" href="/#about">О компании</a>
+                    <a class="site-footer__navigation-link" href="/#about">О&nbsp;компании</a>
                 </li>
                 <li class="site-footer__navigation-item site-footer__navigation-item--children">
                     <a class="site-footer__navigation-link" href="/faq/">FAQ</a>
                 </li>
             </ul>
             <div class="site-footer__social social">
-                <p>Мы в социальных сетях:</p>
-                <ul class="social__list">
+                <p>Мы&nbsp;в&nbsp;социальных сетях:</p>
+                <ul class="social__list" aria-label="Социальные сети">
                     <li class="social__item">
-                        <a class="social__link social__link--youtube" href="https://www.youtube.com/@KERWAN3D" target="_blank" rel="noopener noreferrer">
+                        <a class="social__link social__link--youtube" href="https://www.youtube.com/@KERWAN3D" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
-                                    <path stroke-linecap="round" d="M2.45 11.419c0-3.017.3-4.526 1.237-5.463s2.446-.937 5.463-.937h5.7c3.017 0 4.525 0 5.463.937s1.237 2.446 1.237 5.463v1.162c0 3.017-.3 4.526-1.237 5.463s-2.446.937-5.463.937h-5.7c-3.017 0-4.526 0-5.463-.937S2.45 15.598 2.45 12.581z"/>
-                                    <path d="m14.686 11.491l-4.268-2.667a.6.6 0 0 0-.918.509v5.335a.6.6 0 0 0 .918.508l4.268-2.667a.6.6 0 0 0 0-1.018Z"/>
+                                    <path stroke-linecap="round" d="M2.45 11.419c0-3.017.3-4.526 1.237-5.463s2.446-.937 5.463-.937h5.7c3.017 0 4.525 0 5.463.937s1.237 2.446 1.237 5.463v1.162c0 3.017-.3 4.526-1.237 5.463s-2.446.937-5.463.937h-5.7c-3.017 0-4.526 0-5.463-.937S2.45 15.598 2.45 12.581z" />
+                                    <path d="m14.686 11.491l-4.268-2.667a.6.6 0 0 0-.918.509v5.335a.6.6 0 0 0 .918.508l4.268-2.667a.6.6 0 0 0 0-1.018Z" />
                                 </g>
                             </svg>
                             <span class="visually-hidden">YouTube</span>
                         </a>
                     </li>
-                    <li class="social__item social__link--vk">
-                        <a class="social__link" href="https://vk.com/kerwan3d" target="_blank" rel="noopener noreferrer">
+                    <li class="social__item">
+                        <a class="social__link social__link--vk" href="https://vk.com/kerwan3d" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10.749V7.053c0-.833-.151-1-.98-1L10.67 6c-.732 0-1.098 0-1.246.237s.016.562.343 1.21c.182.36.28.621.28 1.025v2.66c0 .84 0 1.261-.32 1.386c-.32.124-.585-.158-1.117-.722c-1.3-1.384-1.978-3.112-2.423-4.996c-.092-.39-.138-.585-.276-.693S5.576 6 5.184 6h-2.2c-.482 0-.723 0-.874.17c-.15.171-.121.389-.063.824c.528 3.927 3.981 10.366 10.36 10.98c1.13.108 1.593-.197 1.593-1.435c0-.702-.015-1.836.868-1.985c.463-.078.774.087 1.291.52c.896.752 1.366 1.67 1.693 2.367c.217.462.378.559.888.559h2.074c1.048 0 1.333-.256.866-1.24a9 9 0 0 0-2.196-2.893c-.636-.547-.953-.82-.97-1.022c-.019-.201.214-.486.68-1.056c.9-1.102 2.126-2.831 2.698-4.666c.284-.91.017-1.123-.904-1.123h-1.863c-.903 0-.902-.031-1.115.993c-.346 1.661-1.478 3.258-2.542 4.345c-.505.516-.81.827-1.125.7S14 11.524 14 10.748" color="currentColor"/>
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10.749V7.053c0-.833-.151-1-.98-1L10.67 6c-.732 0-1.098 0-1.246.237s.016.562.343 1.21c.182.36.28.621.28 1.025v2.66c0 .84 0 1.261-.32 1.386c-.32.124-.585-.158-1.117-.722c-1.3-1.384-1.978-3.112-2.423-4.996c-.092-.39-.138-.585-.276-.693S5.576 6 5.184 6h-2.2c-.482 0-.723 0-.874.17c-.15.171-.121.389-.063.824c.528 3.927 3.981 10.366 10.36 10.98c1.13.108 1.593-.197 1.593-1.435c0-.702-.015-1.836.868-1.985c.463-.078.774.087 1.291.52c.896.752 1.366 1.67 1.693 2.367c.217.462.378.559.888.559h2.074c1.048 0 1.333-.256.866-1.24a9 9 0 0 0-2.196-2.893c-.636-.547-.953-.82-.97-1.022c-.019-.201.214-.486.68-1.056c.9-1.102 2.126-2.831 2.698-4.666c.284-.91.017-1.123-.904-1.123h-1.863c-.903 0-.902-.031-1.115.993c-.346 1.661-1.478 3.258-2.542 4.345c-.505.516-.81.827-1.125.7S14 11.524 14 10.748" color="currentColor" />
                             </svg>
                             <span class="visually-hidden">VK</span>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--instagram" href="https://www.instagram.com/kerwan3d/" target="_blank" rel="noopener noreferrer">
+                        <a class="social__link social__link--instagram" href="https://www.instagram.com/kerwan3d/" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37zm1.5-4.87h.01"/>
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37zm1.5-4.87h.01" />
                                 </g>
                             </svg>
                             <span class="visually-hidden">Instagram</span>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--facebook" href="https://www.facebook.com/kerwan3d" target="_blank" rel="noopener noreferrer">
+                        <a class="social__link social__link--facebook" href="https://www.facebook.com/kerwan3d" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2Z"/>
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2Z" />
                             </svg>
                             <span class="visually-hidden">Facebook</span>
                         </a>
@@ -327,18 +327,18 @@
             </div>
             <ul class="site-footer__contacts contacts">
                 <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+77172695922">+7 (7172) 69 59 22</a>
+                    <a class="contacts__link" href="tel:+77172695922" itemprop="telephone">+7 (7172) 69 59 22</a>
                 </li>
                 <li class="contacts__item">
-                    <a class="contacts__link" href="mailto:sales3d@kerwanltd.com">sales3d@kerwanltd.com</a>
+                    <a class="contacts__link" href="mailto:sales3d@kerwanltd.com" itemprop="email">sales3d@kerwanltd.com</a>
                 </li>
             </ul>
             <a class="site-footer__download" href="#popup-form-34">Скачать брошюру</a>
-            <a class="site-footer__button button button--secondary" href="#popup-form-50">Подписаться на новости</a>
+            <a class="site-footer__button button button--secondary" href="#popup-form-50">Подписаться на&nbsp;новости</a>
             <div class="site-footer__meta">
                 <a href="/sitemap/">Карта сайта</a>
                 <a href="https://kerwanltd.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
-                <small class="site-footer__copyright">© 2025 KERWAN ТОО «Керуэн», Астана</small>
+                <small class="site-footer__copyright">&copy;&nbsp;2025&nbsp;KERWAN <span itemprop="name">ТОО &laquo;Керуэн&raquo;</span>, <span itemprop="address">Астана</span></small>
             </div>
             <a class="site-footer__logo site-footer__logo--peel" href="/">
                 <img class="img-fluid" src="/local/templates/peel3d/img/peel-3d-logo-light.svg" alt="Логотип Peel 3D" width="105" height="43" loading="lazy">

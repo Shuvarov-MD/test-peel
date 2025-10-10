@@ -1,23 +1,21 @@
-.advantages__header {
-    align-items: center;
-    margin-bottom: 40px;
+// Почему стоит выбрать Peel 3D
+.advantages__row {
+    row-gap: rem(40);
 
     @media (min-width: 992px) {
-        margin-bottom: 80px;
+        row-gap: rem(80);
     }
 }
 
 .advantages__list {
     text-align: center;
     justify-content: space-evenly;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style-type: none;
+    @include reset-list;
 }
 
 .advantages__item {
-    padding-top: 80px;
+    padding-top: rem(80);
     background-repeat: no-repeat;
     background-position: top 0 left 50%;
-    background-size: 66px 66px;
+    background-size: rem(66) rem(66);
 }

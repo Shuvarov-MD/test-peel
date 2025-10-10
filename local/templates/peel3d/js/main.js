@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
           openSublist.classList.remove('open');
         }
       });
-
-      console.log(sublist);
       // Переключить текущее подменю
       sublist.classList.toggle('open');
     });
@@ -56,31 +54,28 @@ let swiperHero = new Swiper(".hero__swiper", {
       },
 });
 
-let swiperClients = new Swiper(".clients__swiper", {
+const swiperClients = new Swiper(".clients__slider", {
     slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
-      el: ".clients__swiper-pagination",
+      el: ".clients__pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".clients__swiper-button.swiper-button-next",
-      prevEl: ".clients__swiper-button.swiper-button-prev",
+      nextEl: ".clients__button-next",
+      prevEl: ".clients__button-prev",
     },
     autoplay: {
       delay: 2500,
       disableOnInteraction: false
     },
     breakpoints: {
-      // when window width is >= 320px
       576: {
         slidesPerView: 2,
       },
-      // when window width is >= 480px
       768: {
         slidesPerView: 3,
       },
-      // when window width is >= 640px
       992: {
         slidesPerView: 4,
       }
@@ -102,6 +97,6 @@ let swiperExamples = new Swiper(".examples__swiper", {
 
 let swiperModelingSteps = new Swiper(".modeling-steps__slider", {
   // direction: "vertical",
-  // mousewheel: true,
+  mousewheel: true,
 });
 });

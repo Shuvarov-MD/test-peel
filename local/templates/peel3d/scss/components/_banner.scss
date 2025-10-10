@@ -1,44 +1,41 @@
+// Баннеры
 .banner {
     &--request {
-        padding: 30px;
-        border-radius: 15px;
+        padding: rem(30);
+        border-radius: rem(15);
         background: #DFE3EC url("../img/banner-bg.jpg") no-repeat top left / cover;
     
         .banner__title,
         .banner__description {
-            max-width: 260px;
+            max-width: rem(260);
         }
 
-        .banner__button {
-            margin-top: 25px;
+        .button {
+            margin-top: rem(25);
         }
     }
 }
 
 .banner__logo {
-    margin-bottom: 45px;
+    margin-bottom: rem(45);
 }
 
 .banner__wrapper {
-    padding: 30px;
-    border-radius: 15px;
+    padding: rem(30) rem(20);
+    border-radius: rem(15);
     background-color: $color-primary;
 
     @media (min-width: 576px) {
-        padding: 40px;
+        padding: rem(40);
     }
 
     @media (min-width: 992px) {
-        padding: 40px 65px;
+        padding: rem(40) rem(65);
     }
 }
 
-.banner__title {
-    margin-bottom: 0.61em;
-}
-
 .banner__link {
-    margin-top: 10px;
+    margin-top: rem(10);
 
     &:hover,
     &:focus {

@@ -1,25 +1,16 @@
-.applications__title {
-    margin-bottom: 1.39em;
-}
-
+// Сферы применения
 .applications__list {
-    row-gap: 30px;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style-type: none;
+    row-gap: rem(40);
+    margin-top: rem(50);
+    @include reset-list;
 
     @media (min-width: 992px) {
-        row-gap: 80px;
+        row-gap: rem(80);
     }
 }
 
-.applications__item-img {
+.applications__img {
     width: 100%;
-    height: auto;
-    margin-bottom: 30px;
-    border-radius: 15px;
-}
-
-.applications__item-title {
-    margin-bottom: 0.59em;
+    margin-bottom: rem(30);
+    border-radius: rem(15);
 }

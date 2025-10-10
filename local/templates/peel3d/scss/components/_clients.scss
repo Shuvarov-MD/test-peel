@@ -1,81 +1,18 @@
-.clients__title {
-    margin-bottom: 1.8em;
-}
-
+// Клиенты
 .clients__slider-wrapper {
-    position: relative;
-    padding-left: 35px;
-    padding-right: 35px;
-
-    @media (min-width: 992px) {
-        padding-left: 65px;
-        padding-right: 65px;
-    }
+    margin-top: rem(50);
 }
 
-.clients__list {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style-type: none;
+.clients__slider {
     color: #63666A;
 }
 
-.clients__item-logo {
+.clients__logo {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 85px;
-    margin-bottom: 20px;
-
-    img {
-        object-fit: contain;
-    }
+    height: rem(85);
+    margin-bottom: rem(20);
 }
 
-.clients__swiper-pagination {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
 
-    .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        border: 1px solid #181818;
-        background-color: transparent;
-        margin: 0 !important;
-        opacity: 1;
-    }
-
-    .swiper-pagination-bullet-active {
-        background-color: #181818;
-    }
-}
-
-.clients__swiper-button {
-    width: 21px;
-    height: 43px;
-    padding: 0;
-    mask: url("../img/icons/slider-arrow.svg") no-repeat center;
-    background-color: #000000;
-    cursor: pointer;
-
-    &:disabled {
-        background-color: #BCBCBC;
-        cursor: default;
-    }
-
-    &:not(:disabled):hover,
-    &:not(:disabled):focus {
-        background-color: #F4B400;
-    }
-
-    &.swiper-button-prev {
-        transform: rotate(180deg);
-    }
-
-    .swiper-navigation-icon {
-        display: none;
-    }
-}
